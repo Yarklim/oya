@@ -1,21 +1,21 @@
 {
-  "name": "template_parcel-vanilla_js",
+  "name": "oya",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Yarklim.github.io/template_parcel-vanilla_js",
+  "homepage": "https://Yarklim.github.io/oya",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /template_parcel-vanilla_js/"
+    "build": "parcel build src/*.html --public-url /oya/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yarklim/template_parcel-vanilla_js.git"
+    "url": "git+https://github.com/Yarklim/oya.git"
   },
   "keywords": [],
   "author": "yarklim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yarklim/template_parcel-vanilla_js/issues"
+    "url": "https://github.com/Yarklim/oya/issues"
   },
   "dependencies": {
     "modern-normalize": "^2.0.0"
