@@ -1,0 +1,17 @@
+// =========== Fonts ============
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// ==== Base styles ====
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+
+// ==== Utils ====
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+// ========= Components =========
+@import './components/header';
+@import './components/footer';
+
+// ==== Layouts ====

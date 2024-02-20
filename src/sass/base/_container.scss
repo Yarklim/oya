@@ -1,0 +1,26 @@
+[class*='__container'] {
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 clamp(0.625rem, -0.982rem + 8.04vw, 6.25rem);
+
+  //   // ===== Mobile screem 480px =====
+  //   @media screen and (min-width: 480px) {
+  //     max-width: 480px;
+  //   }
+
+  //   // ===== Tablet screen 768px =====
+  //   @media screen and (min-width: 768px) {
+  //     max-width: 768px;
+  //   }
+
+  //   // ===== Desctop screen 1200px =====
+  //   @media screen and (min-width: 1200px) {
+  //     max-width: 1200px;
+  //   }
+
+  //   // ===== Desctop screen 1440px =====
+  //   @media screen and (min-width: 1440px) {
+  //     max-width: 1440px;
+  //   }
+}
