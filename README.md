@@ -1,2 +1,6 @@
-# oya
-OYA - Landing Prototype
+# OYA - Landing Prototype
+## Tech Stack:
+* HTML  
+* SCSS  
+* JavaScript  
+* Parcel
