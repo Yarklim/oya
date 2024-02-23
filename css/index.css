@@ -133,10 +133,38 @@ body {
   background-color: #50c750;
 }
 
-[class*=__container] {
-  max-width: 1440px;
+.section {
+  padding-top: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+  padding-bottom: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+}
+
+.container {
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 clamp(0.625rem, -0.982rem + 8.04vw, 6.25rem);
+  padding-left: clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem);
+  padding-right: clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem);
+}
+
+:root {
+  --font-sans: "Open Sans", sans-serif;
+  --font-noto: "Noto Serif Display", serif;
+  --light-color: #fff;
+  --light-smooth-color: #ebebeb;
+  --light-gray-color: #656c7e;
+  --light-blue-color: #b5d8d6;
+  --light-green-color: #738471;
+  --dark-color: #3b3633;
+  --dark-green-color: #37473a;
+  --dark-blue-color: #363a45;
+  --orange-color: #d7ae9c;
+  --orange-smooth-color: #a6857e;
+  --light-bg: #ebebeb;
+  --dark-bg: #363a45;
+  --green-dark-bg: linear-gradient(0deg, #3e4c3d 0%, #3e4c3d 100%), #37473a;
+  --green-light-bg: #738471;
+  --orange-bg: #f0bb82;
+  --blue-light-bg: #b5d8d6;
+  --background-light: #fcfefd;
 }
 
 .visually--hidden {

@@ -1,24 +1,26 @@
-// :root {
-//   // --------- Fonts ---------
-//   --font-sans: 'DM Sans', sans-serif;
-//   --font-rosario: 'Rosario', sans-serif;
+:root {
+  // --------- Fonts ---------
+  --font-sans: 'Open Sans', sans-serif;
+  --font-noto: 'Noto Serif Display', serif;
 
-//   // ---------- Text ----------
-//   --titles-color: #222;
-//   --paragraph-color: #555;
-//   --light-color: #fff;
-//   --dark-color: #000;
+  // ---------- Colors ----------
+  --light-color: #fff;
+  --light-smooth-color: #ebebeb;
+  --light-gray-color: #656c7e;
+  --light-blue-color: #b5d8d6;
+  --light-green-color: #738471;
+  --dark-color: #3b3633;
+  --dark-green-color: #37473a;
+  --dark-blue-color: #363a45;
+  --orange-color: #d7ae9c;
+  --orange-smooth-color: #a6857e;
 
-//   // ---------- Backgrounds ----------
-//   --accent: #09a66d;
-//   --background-color: #f3fbf8;
-//   --background-dark: #09a66d;
-//   --background-light: #fcfefd;
-
-//   // ------------ Media screen ------------
-//   --mobile: 320px;
-//   --tablet-small: 480px;
-//   --tablet-big: 768px;
-//   --desktop-small: 1024px;
-//   --desktop-big: 1200px;
-// }
+  // ---------- Backgrounds ----------
+  --light-bg: #ebebeb;
+  --dark-bg: #363a45;
+  --green-dark-bg: linear-gradient(0deg, #3e4c3d 0%, #3e4c3d 100%), #37473a;
+  --green-light-bg: #738471;
+  --orange-bg: #f0bb82;
+  --blue-light-bg: #b5d8d6;
+  --background-light: #fcfefd;
+}
