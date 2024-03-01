@@ -1,14 +1,12 @@
 .header {
   width: 100%;
 
-  display: flex;
-  align-items: center;
-
   background-color: gray;
 }
 
 .header__wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -67,4 +65,52 @@
   letter-spacing: 2.8px;
   text-transform: uppercase;
   color: var(--light-color);
+}
+
+.header__wallet--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  padding: 10px 10px;
+
+  background: transparent;
+
+  @media screen and (min-width: 768px) {
+    padding: 10px 20px;
+
+    background: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.2px);
+    -webkit-backdrop-filter: blur(11.2px);
+    border: 1px solid rgba(255, 255, 255, 0.308);
+  }
+}
+
+.header__wallet--icon {
+  width: 30px;
+  height: 30px;
+
+  fill: var(--light-color);
+  stroke: var(--light-color);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__wallet--text {
+  display: none;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--light-color);
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
