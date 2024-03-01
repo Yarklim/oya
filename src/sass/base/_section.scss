@@ -1,12 +1,6 @@
 .section {
-  padding-top: clamp(
-    1.875rem,
-    1.5rem + 1.88vw,
-    3.75rem
-  ); // 320 - 30px, 1920 - 60px
-  padding-bottom: clamp(
-    1.875rem,
-    1.5rem + 1.88vw,
-    3.75rem
-  ); // 320 - 30px, 1920 - 60px
+  // 320 - 20px, 1920 - 40px
+  padding-top: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+  // 320 - 20px, 1920 - 40px
+  padding-bottom: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }

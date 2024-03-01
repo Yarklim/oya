@@ -2,14 +2,9 @@
   max-width: 1920px;
 
   margin: 0 auto;
-  padding-left: clamp(
-    0.938rem,
-    -0.75rem + 8.44vw,
-    9.375rem
-  ); // 320 - 30px 15px, 1920 - 60px 150px
-  padding-right: clamp(
-    0.938rem,
-    -0.75rem + 8.44vw,
-    9.375rem
-  ); // 320 - 30px 15px, 1920 - 60px 150px
+
+  // 320 - 30px 15px, 1920 - 60px 150px
+  padding-left: clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem);
+  // 320 - 30px 15px, 1920 - 60px 150px
+  padding-right: clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem);
 }

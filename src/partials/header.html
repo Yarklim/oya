@@ -1,18 +1,49 @@
 <header class="container header">
-  <div class="header__logo">LOGO</div>
-  <nav class="header__nav">
-    <ul class="header__nav--list">
-      <li class="header__nav--item">
-        <a href="./index.html" class="header__nav-link">Home</a>
-      </li>
+  <section class="section header__wrapper">
+    <div class="header__menu">
+      <button class="menu__btn js-btn-menu" aria-label="open mobile menu">
+        <svg
+          width="24"
+          height="24"
+          class="menu__icon js-btn-icon-open menu-active"
+        >
+          <use href="./icons/sprite.svg#menu"></use>
+        </svg>
+        <svg width="24" height="24" class="menu__icon js-btn-icon-open">
+          <use href="./icons/sprite.svg#menu-close"></use>
+        </svg>
+        <span class="menu__btn-text">Menu</span>
+      </button>
 
-      <li class="header__nav-item">
-        <a href="./page-2.html" class="header__nav-link">Page 2</a>
-      </li>
+      <!---------------------------- Navigation ------------------------------>
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+          <li class="header__nav--item">
+            <a href="./index.html" class="header__nav-link">Home</a>
+          </li>
 
-      <li class="header__nav-item">
-        <a href="./page-3.html" class="header__nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+          <li class="header__nav-item">
+            <a href="./page-2.html" class="header__nav-link">Page 2</a>
+          </li>
+
+          <li class="header__nav-item">
+            <a href="./page-3.html" class="header__nav-link">Page 3</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!---------------------------------- Logo -------------------------------->
+    <div class="header__logo--wrapper">
+      <svg width="120" height="39" class="header__logo">
+        <use href="./icons/sprite.svg#logo"></use>
+      </svg>
+      <span class="header__logo--text">connect heal live</span>
+    </div>
+
+    <!--------------------------------- Wallet ------------------------------->
+    <button class="header__wallet--btn">
+      <span class="header__wallet--text">Connect Wallet</span>
+    </button>
+  </section>
 </header>
