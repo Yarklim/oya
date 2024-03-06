@@ -168,6 +168,11 @@ body {
   --brown-light-bg: #d7ae9c;
   --orange-bg: #f0bb82;
   --blue-bg: #b5d8d6;
+  --gray-gradient: linear-gradient(
+    0deg,
+    rgba(54, 58, 69, 0.96) 0%,
+    rgba(54, 58, 69, 0.96) 100%
+  );
 }
 
 .visually--hidden {
@@ -181,6 +186,7 @@ body {
 }
 
 .header__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,6 +196,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .menu__btn {
@@ -224,8 +231,12 @@ body {
 }
 
 .header__nav-menu {
-  display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--gray-gradient), url(../src/images/backgrounds/hero_bg@desk.jpg);
 }
 
 .header__logo--wrapper {

@@ -26,4 +26,11 @@
   --brown-light-bg: #d7ae9c;
   --orange-bg: #f0bb82;
   --blue-bg: #b5d8d6;
+
+  //  --------------- Gradients ---------------
+  --gray-gradient: linear-gradient(
+    0deg,
+    rgba(54, 58, 69, 0.96) 0%,
+    rgba(54, 58, 69, 0.96) 100%
+  );
 }
