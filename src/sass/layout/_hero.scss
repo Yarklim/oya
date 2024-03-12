@@ -12,12 +12,12 @@
   background-repeat: no-repeat;
 
   //   ----- Mobile screen ----
-  background-image: url('../src/images/backgrounds/hero_bg@mob.jpg');
+  background-image: url('../src/images/backgrounds/hero_bg@mob.webp');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../src/images/backgrounds/hero_bg@mob2x.jpg');
+    background-image: url('../src/images/backgrounds/hero_bg@mob2x.webp');
   }
 
   @media screen and (min-width: 768px) {

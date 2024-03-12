@@ -223,6 +223,10 @@ body {
      -moz-column-gap: 14px;
           column-gap: 14px;
 }
+.menu__btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
 
 .menu__icon {
   display: none;
@@ -299,6 +303,8 @@ body {
       flex-shrink: 0;
   padding: 10px 10px;
   background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (min-width: 768px) {
   .header__wallet--btn {
@@ -310,6 +316,13 @@ body {
     -webkit-backdrop-filter: blur(11.2px);
     border: 1px solid rgba(255, 255, 255, 0.308);
   }
+  .header__wallet--btn:hover, .header__wallet--btn:focus-visible {
+    background: var(--green-light-bg);
+  }
+}
+.header__wallet--btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .header__wallet--icon {
@@ -354,11 +367,11 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../src/images/backgrounds/hero_bg@mob.jpg");
+  background-image: url("../src/images/backgrounds/hero_bg@mob.webp");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../src/images/backgrounds/hero_bg@mob2x.jpg");
+    background-image: url("../src/images/backgrounds/hero_bg@mob2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
