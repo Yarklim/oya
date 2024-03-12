@@ -85,19 +85,23 @@
 }
 
 .header__logo {
-  width: clamp(3.75rem, 2.5rem + 5.56vw, 7.5rem);
+  width: clamp(5rem, 4.167rem + 3.7vw, 7.5rem);
 
   fill: var(--light-color);
 }
 
 .header__logo--text {
-  width: max-content;
+  display: none;
 
-  font-size: 7px;
-  font-weight: 600;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: var(--light-color);
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    font-size: 7px;
+    font-weight: 600;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
 }
 
 .header__wallet--btn {

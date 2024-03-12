@@ -1,4 +1,7 @@
-# OYA - Landing Prototype
+# OYA - Landing Prototype  
+* Responsive  
+* Mobile first  
+* Adaptive images  
 ## Tech Stack:
 * HTML  
 * SCSS  
