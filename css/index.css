@@ -361,6 +361,26 @@ body {
     background-image: url("../src/images/backgrounds/hero_bg@mob2x.jpg");
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../src/images/backgrounds/hero_bg@tab.webp");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../src/images/backgrounds/hero_bg@tab2x.webp");
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url("../src/images/backgrounds/hero_bg@desk.webp");
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../src/images/backgrounds/hero_bg@desk2x.webp");
+  }
+}
 
 .test {
   width: var(--index);

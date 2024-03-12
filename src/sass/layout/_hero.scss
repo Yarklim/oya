@@ -19,6 +19,26 @@
     (min-resolution: 2dppx) {
     background-image: url('../src/images/backgrounds/hero_bg@mob2x.jpg');
   }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../src/images/backgrounds/hero_bg@tab.webp');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../src/images/backgrounds/hero_bg@tab2x.webp');
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url('../src/images/backgrounds/hero_bg@desk.webp');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../src/images/backgrounds/hero_bg@desk2x.webp');
+    }
+  }
 }
 
 .test {
