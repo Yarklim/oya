@@ -1,4 +1,7 @@
 :root {
+  // --------- Index ---------
+  --index: calc(1vw + 1vh); // 28.86px (1920px)
+
   // --------- Fonts ---------
   --font-sans: 'Open Sans', sans-serif;
   --font-noto: 'Noto Serif Display', serif;

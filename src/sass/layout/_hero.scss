@@ -1,0 +1,29 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: var(--green-dark-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  //   ----- Mobile screen ----
+  background-image: url('../src/images/backgrounds/hero_bg@mob.jpg');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../src/images/backgrounds/hero_bg@mob2x.jpg');
+  }
+}
+
+.test {
+  width: var(--index);
+  height: var(--index);
+
+  background-color: #ad1b1b;
+}
