@@ -3,9 +3,7 @@
 
   padding: 240px 0 220px 0;
 
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 
   background-color: var(--green-dark-bg);
   background-size: cover;
@@ -160,7 +158,7 @@
 
     position: absolute;
     right: clamp(1.563rem, -1.464rem + 12.42vw, 13.438rem);
-    bottom: clamp(2.5rem, 0.031rem + 10.13vw, 12.188rem);
+    bottom: clamp(2.5rem, 0.563rem + 9.69vw, 12.188rem);
 
     z-index: 10;
 
@@ -181,7 +179,6 @@
 
   & path {
     stroke-dasharray: 6000;
-    stroke-dashoffset: 6000;
 
     animation: draw 3s linear forwards;
 

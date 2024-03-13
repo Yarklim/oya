@@ -183,7 +183,9 @@ body {
 
 .header {
   width: 100%;
-  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header__nav-menu {
@@ -362,9 +364,7 @@ body {
 .hero {
   width: 100%;
   padding: 240px 0 220px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   background-color: var(--green-dark-bg);
   background-size: cover;
   background-position: center;
@@ -506,7 +506,7 @@ body {
   height: clamp(8.75rem, 7.794rem + 3.92vw, 12.5rem);
   position: absolute;
   right: clamp(1.563rem, -1.464rem + 12.42vw, 13.438rem);
-  bottom: clamp(2.5rem, 0.031rem + 10.13vw, 12.188rem);
+  bottom: clamp(2.5rem, 0.563rem + 9.69vw, 12.188rem);
   z-index: 10;
   background-color: var(--orange-bg);
 }
@@ -523,7 +523,6 @@ body {
 }
 .hero__bg-circles path {
   stroke-dasharray: 6000;
-  stroke-dashoffset: 6000;
   -webkit-animation: draw 3s linear forwards;
           animation: draw 3s linear forwards;
 }
@@ -546,5 +545,95 @@ body {
 @keyframes draw {
   100% {
     stroke-dashoffset: 0;
+  }
+}
+.community {
+  background-color: var(--green-dark-bg);
+  overflow-x: hidden;
+}
+
+.first__item--img-wrapper {
+  white-space: nowrap;
+}
+
+.img1 {
+  -webkit-animation: fade 10s linear infinite;
+          animation: fade 10s linear infinite;
+  will-change: opacity;
+}
+
+.img2 {
+  -webkit-animation: fade2 10s linear infinite;
+          animation: fade2 10s linear infinite;
+  will-change: opacity;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }/*# sourceMappingURL=index.css.map */

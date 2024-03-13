@@ -1,0 +1,54 @@
+.community {
+  background-color: var(--green-dark-bg);
+
+  overflow-x: hidden;
+}
+
+.first__item--img-wrapper {
+  white-space: nowrap;
+}
+
+.img1 {
+  animation: fade 10s linear infinite;
+  will-change: opacity;
+}
+
+.img2 {
+  animation: fade2 10s linear infinite;
+  will-change: opacity;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
