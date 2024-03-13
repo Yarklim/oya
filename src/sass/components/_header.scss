@@ -39,6 +39,18 @@
   align-items: center;
   column-gap: 14px;
 
+  fill: var(--light-color);
+  stroke: var(--light-color);
+
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus-visible {
+    fill: var(--light-blue-color);
+    stroke: var(--light-blue-color);
+    color: var(--light-blue-color);
+  }
+
   &:active {
     transform: scale(0.95);
   }
@@ -50,8 +62,8 @@
   width: 24px;
   height: 24px;
 
-  fill: var(--light-color);
-  stroke: var(--light-color);
+  fill: inherit;
+  stroke: inherit;
 
   &.menu-active {
     display: block;

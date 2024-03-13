@@ -223,6 +223,15 @@ body {
   -webkit-column-gap: 14px;
      -moz-column-gap: 14px;
           column-gap: 14px;
+  fill: var(--light-color);
+  stroke: var(--light-color);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.menu__btn:hover, .menu__btn:focus-visible {
+  fill: var(--light-blue-color);
+  stroke: var(--light-blue-color);
+  color: var(--light-blue-color);
 }
 .menu__btn:active {
   -webkit-transform: scale(0.95);
@@ -233,8 +242,8 @@ body {
   display: none;
   width: 24px;
   height: 24px;
-  fill: var(--light-color);
-  stroke: var(--light-color);
+  fill: inherit;
+  stroke: inherit;
 }
 .menu__icon.menu-active {
   display: block;
