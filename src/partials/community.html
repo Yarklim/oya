@@ -2,8 +2,9 @@
   <h2 class="visually--hidden">Community</h2>
   <div class="container community__wrapper">
     <!-- Content -->
-    <div class="community__content">
-      <ul class="community__first community__first-list">
+    <div class="community__content--list">
+      <!-- First list -->
+      <ul class="community__list community__first-list">
         <li class="first__item-text">
           <h3 class="first__item--title">LONGEVITY</h3>
           <h4 class="first__item--subtitle">rediscovered</h4>
@@ -128,6 +129,99 @@
               alt="women in pool"
               width="620"
               height="620"
+              loading="lazy"
+            />
+          </picture>
+        </li>
+      </ul>
+
+      <!-- Second list -->
+      <ul class="community__list community__second-list">
+        <li class="second__item-text">
+          <h3 class="second__item--title">OYA</h3>
+          <h4 class="second__item--subtitle">offers you</h4>
+          <ul class="item__text--list">
+            <li class="item__text--item">
+              <div class="text-item__line"></div>
+              <p class="second__item--text">
+                Luxury accommodation that connects you to nature.
+              </p>
+            </li>
+            <li class="item__text--item">
+              <div class="text-item__line"></div>
+              <p class="second__item--text">
+                Fresh and healthy farm to table food from her garden.
+              </p>
+            </li>
+            <li class="item__text--item">
+              <div class="text-item__line"></div>
+              <p class="second__item--text">
+                Personalized plans to track and restore your health.
+              </p>
+            </li>
+            <li class="item__text--item">
+              <div class="text-item__line"></div>
+              <p class="second__item--text">
+                A community and the resources you need to transform your life.
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="second__item--img-wrapper">
+          <!-- image -->
+          <picture class="second-item__img">
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/community/offers@mob.webp  1x,
+                ./images/community/offers@desk.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/community/offers@mob.jpg  1x,
+                ./images/community/offers@desk.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/community/offers@desk.webp   1x,
+                ./images/community/offers@desk2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/community/offers@tab.jpg   1x,
+                ./images/community/offers@tab2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/community/offers@desk.webp   1x,
+                ./images/community/offers@desk2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/community/offers@desk.jpg   1x,
+                ./images/community/offers@desk2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="./images/community/offers@desk.jpg"
+              alt="hotel in forest"
+              width="790"
               loading="lazy"
             />
           </picture>
