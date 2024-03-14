@@ -128,9 +128,11 @@
 
   transition: all 0.3s ease;
 
-  &:hover,
-  &:focus-visible {
-    transform: scale(1.1);
+  @media (any-hover: hover) {
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.1);
+    }
   }
 
   &:active {

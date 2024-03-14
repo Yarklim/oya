@@ -44,11 +44,13 @@
 
   transition: all 0.3s ease;
 
-  &:hover,
-  &:focus-visible {
-    fill: var(--light-blue-color);
-    stroke: var(--light-blue-color);
-    color: var(--light-blue-color);
+  @media (any-hover: hover) {
+    &:hover,
+    &:focus-visible {
+      fill: var(--light-blue-color);
+      stroke: var(--light-blue-color);
+      color: var(--light-blue-color);
+    }
   }
 
   &:active {
@@ -139,9 +141,11 @@
     -webkit-backdrop-filter: blur(11.2px);
     border: 1px solid rgba(255, 255, 255, 0.308);
 
-    &:hover,
-    &:focus-visible {
-      background: var(--green-light-bg);
+    @media (any-hover: hover) {
+      &:hover,
+      &:focus-visible {
+        background: var(--green-light-bg);
+      }
     }
   }
 

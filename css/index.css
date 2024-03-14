@@ -228,10 +228,12 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.menu__btn:hover, .menu__btn:focus-visible {
-  fill: var(--light-blue-color);
-  stroke: var(--light-blue-color);
-  color: var(--light-blue-color);
+@media (any-hover: hover) {
+  .menu__btn:hover, .menu__btn:focus-visible {
+    fill: var(--light-blue-color);
+    stroke: var(--light-blue-color);
+    color: var(--light-blue-color);
+  }
 }
 .menu__btn:active {
   -webkit-transform: scale(0.95);
@@ -329,6 +331,8 @@ body {
     -webkit-backdrop-filter: blur(11.2px);
     border: 1px solid rgba(255, 255, 255, 0.308);
   }
+}
+@media screen and (min-width: 768px) and (any-hover: hover) {
   .header__wallet--btn:hover, .header__wallet--btn:focus-visible {
     background: var(--green-light-bg);
   }
@@ -492,9 +496,11 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.hero__link:hover, .hero__link:focus-visible {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (any-hover: hover) {
+  .hero__link:hover, .hero__link:focus-visible {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 .hero__link:active {
   -webkit-transform: scale(0.95);
