@@ -125,9 +125,13 @@
   }
 
   & .second__item--text {
-    font-size: clamp(1.125rem, 0.542rem + 1.22vw, 2rem);
+    font-size: clamp(1.125rem, 0.901rem + 1.12vw, 1.438rem);
     line-height: 1.4;
     color: var(--light-smooth-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: clamp(1.125rem, 0.542rem + 1.22vw, 2rem);
+    }
   }
 
   & .item__text--list {
@@ -147,11 +151,15 @@
 }
 
 .text-item__line {
-  width: 36px;
+  width: 24px;
   height: 1px;
   flex-shrink: 0;
 
   background-color: var(--light-smooth-color);
+
+  @media screen and (min-width: 768px) {
+    width: clamp(1.5rem, 1rem + 1.04vw, 2.25rem);
+  }
 }
 
 .first__item--img-wrapper {
