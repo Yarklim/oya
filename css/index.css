@@ -800,8 +800,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  -webkit-animation: fade 15xs linear infinite;
-          animation: fade 15xs linear infinite;
+  -webkit-animation: fade 12s linear infinite;
+          animation: fade 12s linear infinite;
   will-change: opacity;
 }
 
@@ -810,8 +810,8 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  -webkit-animation: fade2 15s linear infinite;
-          animation: fade2 15s linear infinite;
+  -webkit-animation: fade2 12s linear infinite;
+          animation: fade2 12s linear infinite;
   will-change: opacity;
 }
 
