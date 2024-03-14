@@ -726,10 +726,29 @@ body {
   font-size: clamp(1.125rem, 0.901rem + 1.12vw, 1.438rem);
   line-height: 1.4;
   color: var(--light-smooth-color);
+  padding-left: 40px;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .second__item-text .second__item--text {
     font-size: clamp(1.125rem, 0.542rem + 1.22vw, 2rem);
+  }
+}
+.second__item-text .second__item--text::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: var(--light-smooth-color);
+}
+@media screen and (min-width: 768px) {
+  .second__item-text .second__item--text::before {
+    width: 22px;
   }
 }
 .second__item-text .item__text--list {
@@ -759,19 +778,6 @@ body {
           column-gap: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem);
 }
 
-.text-item__line {
-  width: 24px;
-  height: 1px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background-color: var(--light-smooth-color);
-}
-@media screen and (min-width: 768px) {
-  .text-item__line {
-    width: clamp(1.5rem, 1rem + 1.04vw, 2.25rem);
-  }
-}
-
 .first__item--img-wrapper {
   width: clamp(16.875rem, 6.584rem + 51.45vw, 31.25rem);
   height: clamp(16.875rem, 6.584rem + 51.45vw, 31.25rem);
@@ -794,8 +800,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  -webkit-animation: fade 15s linear infinite;
-          animation: fade 15s linear infinite;
+  -webkit-animation: fade 15xs linear infinite;
+          animation: fade 15xs linear infinite;
   will-change: opacity;
 }
 
@@ -881,14 +887,15 @@ body {
 .community__decor-text {
   display: none;
   position: absolute;
-  top: 130px;
-  right: -160px;
+  top: clamp(20rem, 7.625rem + 25.78vw, 38.563rem);
+  left: clamp(26.875rem, -5.208rem + 66.84vw, 75rem);
   font-family: var(--font-serif);
-  font-size: 40px;
+  font-size: clamp(4.375rem, 1.458rem + 6.08vw, 8.75rem);
   font-style: italic;
   font-weight: 300;
   line-height: 1;
   color: var(--light-smooth-color);
+  white-space: nowrap;
   opacity: 0.1;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
