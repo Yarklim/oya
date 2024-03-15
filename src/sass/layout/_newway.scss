@@ -5,6 +5,8 @@
 
   position: relative;
 
+  overflow: hidden;
+
   @media screen and (min-width: 768px) {
     height: clamp(42.5rem, 33.333rem + 19.1vw, 56.25rem); // 680 - 900
   }
@@ -40,6 +42,8 @@
     top: clamp(3.75rem, 1.25rem + 5.21vw, 7.5rem);
     left: clamp(2.5rem, -0.417rem + 6.08vw, 6.875rem);
 
+    z-index: 10;
+
     font-size: clamp(2.5rem, 1.25rem + 2.6vw, 4.375rem);
   }
 }
@@ -66,6 +70,8 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
   }
@@ -123,6 +129,8 @@
   top: 150px;
   left: 50%;
 
+  z-index: 10;
+
   transform: translateX(-50%);
 }
 
@@ -147,8 +155,6 @@
 // ========== Images ==========
 .first-img {
   @media screen and (max-width: 767px) {
-    z-index: 1;
-
     animation: opacity1 24s linear infinite;
     will-change: opacity;
   }
@@ -163,8 +169,6 @@
 }
 .second-img {
   @media screen and (max-width: 767px) {
-    z-index: 2;
-
     animation: opacity2 24s linear infinite;
     will-change: opacity;
   }
@@ -179,8 +183,6 @@
 }
 .third-img {
   @media screen and (max-width: 767px) {
-    z-index: 3;
-
     animation: opacity3 24s linear infinite;
     will-change: opacity;
   }
@@ -197,8 +199,6 @@
 // ============== Text blocks ==============
 .first-block {
   @media screen and (max-width: 767px) {
-    z-index: 1;
-
     animation: opacity1 24s linear infinite;
     will-change: opacity;
   }
@@ -207,14 +207,12 @@
     width: 150px;
     height: 150px;
 
-    top: clamp(1.875rem, -1.25rem + 6.51vw, 6.563rem);
-    left: clamp(30rem, 9.583rem + 42.53vw, 60.625rem);
+    top: clamp(2rem, -1.292rem + 6.86vw, 6.938rem); // 32 - 111
+    left: clamp(26.25rem, 3.625rem + 47.14vw, 60.188rem); // 420 - 963
   }
 }
 .second-block {
   @media screen and (max-width: 767px) {
-    z-index: 2;
-
     animation: opacity2 24s linear infinite;
     will-change: opacity;
   }
@@ -229,8 +227,6 @@
 }
 .third-block {
   @media screen and (max-width: 767px) {
-    z-index: 3;
-
     animation: opacity3 24s linear infinite;
     will-change: opacity;
   }
@@ -302,5 +298,42 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+// =============== Background Circles ================
+.newway__bg-circles {
+  width: clamp(43.75rem, 35.1rem + 43.25vw, 87rem);
+  height: clamp(75rem, 73.088rem + 9.56vw, 84.563rem);
+
+  position: absolute;
+  top: -27%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+
+  opacity: 0.6;
+
+  & path {
+    stroke-dasharray: 6000;
+
+    animation: draw 3s linear forwards;
+
+    &:nth-child(1) {
+      stroke-dashoffset: 10000;
+    }
+    &:nth-child(2) {
+      stroke-dashoffset: 8000;
+    }
+    &:nth-child(3) {
+      stroke-dashoffset: 6000;
+    }
+  }
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
   }
 }

@@ -910,6 +910,7 @@ body {
   width: 100%;
   background-color: var(--light-smooth-color);
   position: relative;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .newway {
@@ -945,6 +946,7 @@ body {
     position: absolute;
     top: clamp(3.75rem, 1.25rem + 5.21vw, 7.5rem);
     left: clamp(2.5rem, -0.417rem + 6.08vw, 6.875rem);
+    z-index: 10;
     font-size: clamp(2.5rem, 1.25rem + 2.6vw, 4.375rem);
   }
 }
@@ -979,6 +981,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 10;
 }
 .newway__texts-block .texts-block__text {
   width: 200px;
@@ -1036,6 +1039,7 @@ body {
   position: absolute;
   top: 150px;
   left: 50%;
+  z-index: 10;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -1055,7 +1059,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .first-img {
-    z-index: 1;
     -webkit-animation: opacity1 24s linear infinite;
             animation: opacity1 24s linear infinite;
     will-change: opacity;
@@ -1072,7 +1075,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .second-img {
-    z-index: 2;
     -webkit-animation: opacity2 24s linear infinite;
             animation: opacity2 24s linear infinite;
     will-change: opacity;
@@ -1089,7 +1091,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .third-img {
-    z-index: 3;
     -webkit-animation: opacity3 24s linear infinite;
             animation: opacity3 24s linear infinite;
     will-change: opacity;
@@ -1106,7 +1107,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .first-block {
-    z-index: 1;
     -webkit-animation: opacity1 24s linear infinite;
             animation: opacity1 24s linear infinite;
     will-change: opacity;
@@ -1116,14 +1116,13 @@ body {
   .first-block {
     width: 150px;
     height: 150px;
-    top: clamp(1.875rem, -1.25rem + 6.51vw, 6.563rem);
-    left: clamp(30rem, 9.583rem + 42.53vw, 60.625rem);
+    top: clamp(2rem, -1.292rem + 6.86vw, 6.938rem);
+    left: clamp(26.25rem, 3.625rem + 47.14vw, 60.188rem);
   }
 }
 
 @media screen and (max-width: 767px) {
   .second-block {
-    z-index: 2;
     -webkit-animation: opacity2 24s linear infinite;
             animation: opacity2 24s linear infinite;
     will-change: opacity;
@@ -1140,7 +1139,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .third-block {
-    z-index: 3;
     -webkit-animation: opacity3 24s linear infinite;
             animation: opacity3 24s linear infinite;
     will-change: opacity;
@@ -1274,5 +1272,36 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+.newway__bg-circles {
+  width: clamp(43.75rem, 35.1rem + 43.25vw, 87rem);
+  height: clamp(75rem, 73.088rem + 9.56vw, 84.563rem);
+  position: absolute;
+  top: -27%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0.6;
+}
+.newway__bg-circles path {
+  stroke-dasharray: 6000;
+  -webkit-animation: draw 3s linear forwards;
+          animation: draw 3s linear forwards;
+}
+.newway__bg-circles path:nth-child(1) {
+  stroke-dashoffset: 10000;
+}
+.newway__bg-circles path:nth-child(2) {
+  stroke-dashoffset: 8000;
+}
+.newway__bg-circles path:nth-child(3) {
+  stroke-dashoffset: 6000;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
   }
 }/*# sourceMappingURL=index.css.map */
