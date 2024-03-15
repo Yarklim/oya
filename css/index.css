@@ -904,4 +904,252 @@ body {
   .community__decor-text {
     display: block;
   }
+}
+
+.newway {
+  background-color: var(--light-smooth-color);
+}
+
+.newway__heading-title {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--dark-green-color);
+}
+.newway__heading-title .italic-style {
+  font-style: italic;
+  font-weight: 300;
+}
+.newway__heading-title .sans-style {
+  font-family: var(--font-sans);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.newway__content--wrapper {
+  position: relative;
+  margin-top: 60px;
+}
+
+.newway__texts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.newway__texts-block .texts-block__text {
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--dark-green-color);
+}
+
+.newway__block-title--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.newway__block-title--list .block-title__item > h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark-green-color);
+  text-transform: uppercase;
+}
+.newway__block-title--list .newway__block-title--img {
+  width: clamp(1.875rem, 1.696rem + 0.89vw, 2.125rem);
+  height: clamp(1.875rem, 1.696rem + 0.89vw, 2.125rem);
+}
+
+.newway__img {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.newway__logo {
+  width: 150px;
+  display: block;
+  margin: 420px auto 0 auto;
+  fill: var(--dark-blue-color);
+}
+
+@media screen and (max-width: 768px) {
+  .first-block {
+    z-index: 1;
+    -webkit-animation: opacity1 24s linear infinite;
+            animation: opacity1 24s linear infinite;
+    will-change: opacity;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .second-block {
+    z-index: 2;
+    -webkit-animation: opacity2 24s linear infinite;
+            animation: opacity2 24s linear infinite;
+    will-change: opacity;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .third-block {
+    z-index: 3;
+    -webkit-animation: opacity3 24s linear infinite;
+            animation: opacity3 24s linear infinite;
+    will-change: opacity;
+  }
+}
+
+@-webkit-keyframes opacity1 {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity1 {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes opacity3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity3 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
