@@ -26,9 +26,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
 
 // ========= Logo =========
+.footer__logo--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .footer__logo {
   width: 80px;
 
@@ -42,16 +55,29 @@
 
 // ========= Description =========
 .footer__description--list {
+  width: 300px;
+
   margin-top: 40px;
 
   display: flex;
   flex-direction: column;
   gap: 20px 0;
+  flex-shrink: 0;
 
   text-align: center;
   font-size: 14px;
   line-height: 1.4;
   color: var(--opacity-light-color);
+
+  @media screen and (min-width: 1200px) {
+    width: clamp(18.75rem, 14.896rem + 5.14vw, 21.063rem); // 300 - 337
+
+    margin-top: 0;
+    margin-left: clamp(2.5rem, 0.417rem + 2.78vw, 3.75rem); // 40 - 60
+
+    text-align: start;
+    font-size: 15px;
+  }
 }
 
 // ========== Navigation ==========
@@ -63,6 +89,14 @@
   display: flex;
   justify-content: center;
   gap: 0 80px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: clamp(0.625rem, -21.25rem + 29.17vw, 13.75rem); // 10 - 220
+
+    flex-direction: column;
+    gap: 40px 0;
+  }
 }
 
 .footer__nav--item {
@@ -71,12 +105,23 @@
   align-items: center;
   gap: 30px 0;
 
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 0 clamp(1.25rem, -1.875rem + 4.17vw, 3.125rem); // 20 - 50
+  }
+
   & a {
     font-size: 14px;
     line-height: 1.4;
     color: var(--opacity-light-color);
 
+    flex-shrink: 0;
+
     transition: all 0.3s ease;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 15px;
+    }
 
     @media (hover: hover) {
       &:hover,
@@ -96,12 +141,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+
+    align-items: flex-end;
+  }
 }
 
 .footer__btn {
-  width: 100%;
+  width: 200px;
 
-  padding: 15px 80px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
 
   font-size: 14px;
   font-weight: 700;
@@ -122,12 +176,18 @@
 }
 
 .footer__socials--list {
+  width: 200px;
+
   margin-top: 30px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 0 20px;
+  gap: 0 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 10px;
+  }
 }
 
 .footer__socials--link {
@@ -148,7 +208,7 @@
   }
 
   & svg {
-    width: 30;
+    width: 20;
 
     fill: inherit;
   }

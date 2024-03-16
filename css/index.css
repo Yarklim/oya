@@ -444,6 +444,34 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.footer__logo--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 
 .footer__logo {
   width: 80px;
@@ -456,6 +484,7 @@ body {
 }
 
 .footer__description--list {
+  width: 300px;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,10 +494,21 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   text-align: center;
   font-size: 14px;
   line-height: 1.4;
   color: var(--opacity-light-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__description--list {
+    width: clamp(18.75rem, 14.896rem + 5.14vw, 21.063rem);
+    margin-top: 0;
+    margin-left: clamp(2.5rem, 0.417rem + 2.78vw, 3.75rem);
+    text-align: start;
+    font-size: 15px;
+  }
 }
 
 .footer__nav--list {
@@ -481,6 +521,17 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0 80px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav--list {
+    margin-top: 0;
+    margin-left: clamp(0.625rem, -21.25rem + 29.17vw, 13.75rem);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px 0;
+  }
 }
 
 .footer__nav--item {
@@ -496,12 +547,28 @@ body {
           align-items: center;
   gap: 30px 0;
 }
+@media screen and (min-width: 1200px) {
+  .footer__nav--item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0 clamp(1.25rem, -1.875rem + 4.17vw, 3.125rem);
+  }
+}
 .footer__nav--item a {
   font-size: 14px;
   line-height: 1.4;
   color: var(--opacity-light-color);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media screen and (min-width: 1200px) {
+  .footer__nav--item a {
+    font-size: 15px;
+  }
 }
 @media (hover: hover) {
   .footer__nav--item a:hover, .footer__nav--item a:focus-visible {
@@ -523,10 +590,24 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__info--list {
+    margin-top: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
 
 .footer__btn {
-  width: 100%;
-  padding: 15px 80px;
+  width: 200px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.3;
@@ -543,17 +624,23 @@ body {
 }
 
 .footer__socials--list {
+  width: 200px;
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 20px;
+  gap: 0 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials--list {
+    margin-top: 10px;
+  }
 }
 
 .footer__socials--link {
@@ -570,7 +657,7 @@ body {
   }
 }
 .footer__socials--link svg {
-  width: 30;
+  width: 20;
   fill: inherit;
 }
 
