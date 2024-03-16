@@ -211,6 +211,7 @@ body {
     rgba(54, 58, 69, 0.96) 0%,
     rgba(54, 58, 69, 0.96) 100%
   );
+  --green-gradient: linear-gradient(0deg, #3e4c3d 0%, #3e4c3d 100%);
 }
 
 .visually--hidden {
@@ -534,7 +535,7 @@ body {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-@media (any-hover: hover) {
+@media (hover: hover) {
   .hero__link:hover, .hero__link:focus-visible {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -1507,4 +1508,79 @@ body {
   .pillars__item-text {
     font-size: 16px;
   }
+}
+
+.international {
+  width: 100%;
+  position: relative;
+  background: var(--green-gradient);
+}
+
+.international__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px 0;
+}
+
+.international__collection--wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px 0;
+}
+
+.international__collection--filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0 25px;
+}
+
+.collection__filter--btn {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  color: var(--light-smooth-color);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (hover: hover) {
+  .collection__filter--btn:hover, .collection__filter--btn:focus-visible {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+.collection__filter--btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.collection__filter--btn.active {
+  text-decoration: underline;
+  color: var(--orange-color);
+}
+
+.collection__filter--img {
+  display: none;
+}
+.collection__filter--img.visible {
+  display: block;
 }/*# sourceMappingURL=index.css.map */
