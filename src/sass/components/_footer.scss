@@ -19,3 +19,137 @@
     background-color: var(--opacity-gray-color);
   }
 }
+
+.footer__wrapper {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// ========= Logo =========
+.footer__logo {
+  width: 80px;
+
+  fill: var(--opacity-light-color);
+}
+
+.footer__logo--text {
+  font-size: 12px;
+  color: var(--opacity-light-color);
+}
+
+// ========= Description =========
+.footer__description--list {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--opacity-light-color);
+}
+
+// ========== Navigation ==========
+.footer__nav--list {
+  width: 100%;
+
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: center;
+  gap: 0 80px;
+}
+
+.footer__nav--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px 0;
+
+  & a {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--opacity-light-color);
+
+    transition: all 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus-visible {
+        color: var(--light-color);
+      }
+    }
+  }
+}
+
+// =========== Socials ============
+.footer__info--list {
+  width: 100%;
+
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__btn {
+  width: 100%;
+
+  padding: 15px 80px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  border: 1px solid var(--opacity-gray-color);
+  background-color: var(--opacity-light-bg);
+
+  transition: all 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--opacity-btnHover-bg);
+    }
+  }
+}
+
+.footer__socials--list {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.footer__socials--link {
+  width: 40px;
+  height: 40px;
+
+  padding: 10px;
+
+  fill: var(--opacity-socials-bg);
+
+  transition: all 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus-visible {
+      fill: var(--opacity-socialsHover-bg);
+    }
+  }
+
+  & svg {
+    width: 30;
+
+    fill: inherit;
+  }
+}
