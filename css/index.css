@@ -411,7 +411,19 @@ body {
 
 .footer {
   width: 100%;
-  height: 100px;
+  position: relative;
+  background: var(--green-gradient);
+}
+.footer::before {
+  content: "";
+  width: 90%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--opacity-gray-color);
 }
 
 .hero {
