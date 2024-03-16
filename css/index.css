@@ -1467,6 +1467,36 @@ body {
   }
 }
 
+@media screen and (min-width: 580px) {
+  .heal-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heal-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .heal-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heal-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .pillars__item-text {
   margin-top: 10px;
   font-size: 17px;

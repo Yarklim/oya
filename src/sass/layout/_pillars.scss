@@ -73,6 +73,24 @@
   }
 }
 
+.heal-text {
+  @media screen and (min-width: 580px) {
+    order: 1;
+  }
+  @media screen and (min-width: 768px) {
+    order: 2;
+  }
+}
+
+.heal-img {
+  @media screen and (min-width: 580px) {
+    order: 2;
+  }
+  @media screen and (min-width: 768px) {
+    order: 1;
+  }
+}
+
 .pillars__item-text {
   margin-top: 10px;
 
