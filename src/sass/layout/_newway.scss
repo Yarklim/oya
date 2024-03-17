@@ -208,7 +208,8 @@
     height: 150px;
 
     top: clamp(2rem, -1.292rem + 6.86vw, 6.938rem); // 32 - 111
-    left: clamp(26.25rem, 3.625rem + 47.14vw, 60.188rem); // 420 - 963
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .second-block {
