@@ -1839,8 +1839,8 @@ body {
 }
 
 .collection__item {
-  width: clamp(3.75rem, 1.964rem + 8.93vw, 6.25rem);
-  height: clamp(3.75rem, 1.964rem + 8.93vw, 6.25rem);
+  width: clamp(3.75rem, 1.071rem + 13.39vw, 7.5rem);
+  height: clamp(3.75rem, 1.071rem + 13.39vw, 7.5rem);
   background-color: var(--gray-light-bg);
 }
 .collection__item.orange-bg {
@@ -1925,22 +1925,6 @@ body {
 .collection__item.item-20.active-item {
   -webkit-animation: bg-item 8s ease infinite;
           animation: bg-item 8s ease infinite;
-}
-.collection__item.item-21.active-item {
-  -webkit-animation: bg-item 12s ease infinite;
-          animation: bg-item 12s ease infinite;
-}
-.collection__item.item-22.active-item {
-  -webkit-animation: bg-item 10.5s ease infinite;
-          animation: bg-item 10.5s ease infinite;
-}
-.collection__item.item-23.active-item {
-  -webkit-animation: bg-item 20s ease infinite;
-          animation: bg-item 20s ease infinite;
-}
-.collection__item.item-24.active-item {
-  -webkit-animation: bg-item 15s ease infinite;
-          animation: bg-item 15s ease infinite;
 }
 
 @-webkit-keyframes bg-item {

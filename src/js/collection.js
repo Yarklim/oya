@@ -17,7 +17,7 @@ export const collectionMosaiс = () => {
 };
 
 function getRandomItem() {
-  return Math.floor(Math.random() * 24);
+  return Math.floor(Math.random() * 20);
 }
 
 // collectionMosaiс();
