@@ -5,21 +5,21 @@ filterBtnArr.forEach(btn => btn.addEventListener('click', toggleActiveBtn));
 
 function toggleActiveBtn(e) {
   const targetElement = e.target;
-  let currentActiveIndex = null;
-  let newActiveIndex = null;
+  let currentActiveIdx = null;
+  let newActiveIdx = null;
 
   if (targetElement.closest('.collection__filter--btn')) {
-    filterBtnArr.forEach((el, index) => {
+    filterBtnArr.forEach((el, idx) => {
       if (el.classList.contains('active')) {
-        currentActiveIndex = index;
+        currentActiveIdx = idx;
         el.classList.remove('active');
-        cardsArr[currentActiveIndex].classList.remove('visible');
+        cardsArr[currentActiveIdx].classList.remove('visible');
       }
       if (el === targetElement) {
-        newActiveIndex = index;
+        newActiveIdx = idx;
       }
     });
     targetElement.classList.add('active');
-    cardsArr[newActiveIndex].classList.add('visible');
+    cardsArr[newActiveIdx].classList.add('visible');
   }
 }

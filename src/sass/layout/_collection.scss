@@ -27,3 +27,118 @@
   line-height: 1.4;
   color: var(--orange-color);
 }
+
+.collection__list {
+  width: 100%;
+
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.collection__item {
+  width: clamp(3.75rem, 1.964rem + 8.93vw, 6.25rem); // 60 - 100
+  height: clamp(3.75rem, 1.964rem + 8.93vw, 6.25rem); // 60 - 100
+
+  background-color: var(--gray-light-bg);
+
+  &.orange-bg {
+    background-color: var(--brown-dark-bg);
+  }
+
+  &.item-1.active-item {
+    animation: bg-item 12s ease infinite;
+  }
+  &.item-2.active-item {
+    animation: bg-item 15s ease infinite;
+  }
+  &.item-3.active-item {
+    animation: bg-item 19s ease infinite;
+  }
+  &.item-4.active-item {
+    animation: bg-item 17s ease infinite;
+  }
+  &.item-5.active-item {
+    animation: bg-item 10s ease infinite;
+  }
+  &.item-6.active-item {
+    animation: bg-item 16s ease infinite;
+  }
+  &.item-7.active-item {
+    animation: bg-item 12s ease infinite;
+  }
+  &.item-8.active-item {
+    animation: bg-item 17s ease infinite;
+  }
+  &.item-9.active-item {
+    animation: bg-item 15.5s ease infinite;
+  }
+  &.item-10.active-item {
+    animation: bg-item 18.5s ease infinite;
+  }
+  &.item-11.active-item {
+    animation: bg-item 8.5s ease infinite;
+  }
+  &.item-12.active-item {
+    animation: bg-item 18s ease infinite;
+  }
+  &.item-13.active-item {
+    animation: bg-item 12s ease infinite;
+  }
+  &.item-14.active-item {
+    animation: bg-item 9s ease infinite;
+  }
+  &.item-15.active-item {
+    animation: bg-item 20s ease infinite;
+  }
+  &.item-16.active-item {
+    animation: bg-item 15s ease infinite;
+  }
+  &.item-17.active-item {
+    animation: bg-item 10s ease infinite;
+  }
+  &.item-18.active-item {
+    animation: bg-item 17s ease infinite;
+  }
+  &.item-19.active-item {
+    animation: bg-item 14s ease infinite;
+  }
+  &.item-20.active-item {
+    animation: bg-item 8s ease infinite;
+  }
+  &.item-21.active-item {
+    animation: bg-item 12s ease infinite;
+  }
+  &.item-22.active-item {
+    animation: bg-item 10.5s ease infinite;
+  }
+  &.item-23.active-item {
+    animation: bg-item 20s ease infinite;
+  }
+  &.item-24.active-item {
+    animation: bg-item 15s ease infinite;
+  }
+}
+
+// ========= Animation =========
+@keyframes bg-item {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  33% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+}

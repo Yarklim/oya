@@ -1,1 +1,2 @@
 import './international';
+import './collection';
