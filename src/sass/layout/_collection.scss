@@ -1,0 +1,29 @@
+.collection {
+  width: 100%;
+
+  background-color: var(--gray-dark-bg);
+}
+
+.collection__title {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(3.125rem, 2.25rem + 4.38vw, 7.5rem); // 50 - 120
+  font-weight: 300;
+}
+
+.collection__text {
+  margin-top: 20px;
+
+  text-align: center;
+  font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem); // 12 - 20
+  line-height: 1.4;
+  color: var(--orange-color);
+}
+
+.collection__date {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 0.95rem + 1.5vw, 2.75rem); // 20 - 44
+  line-height: 1.4;
+  color: var(--orange-color);
+}

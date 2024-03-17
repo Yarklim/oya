@@ -1,0 +1,19 @@
+.jorney {
+  width: 100%;
+
+  background: var(--green-gradient);
+}
+
+.jorney__title {
+  padding-left: clamp(1.25rem, -0.375rem + 8.13vw, 9.375rem); // 20 - 150
+
+  font-family: var(--font-serif);
+  font-size: clamp(3.75rem, 2.75rem + 5vw, 8.75rem); // 60 - 140
+  font-weight: 300;
+  text-transform: uppercase;
+
+  & span {
+    font-style: italic;
+    text-transform: none;
+  }
+}

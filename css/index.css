@@ -1796,6 +1796,71 @@ body {
   }
 }
 
+.collection {
+  width: 100%;
+  background-color: var(--gray-dark-bg);
+}
+
+.collection__title {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(3.125rem, 2.25rem + 4.38vw, 7.5rem);
+  font-weight: 300;
+}
+
+.collection__text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
+  line-height: 1.4;
+  color: var(--orange-color);
+}
+
+.collection__date {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(1.25rem, 0.95rem + 1.5vw, 2.75rem);
+  line-height: 1.4;
+  color: var(--orange-color);
+}
+
+.jorney {
+  width: 100%;
+  background: var(--green-gradient);
+}
+
+.jorney__title {
+  padding-left: clamp(1.25rem, -0.375rem + 8.13vw, 9.375rem);
+  font-family: var(--font-serif);
+  font-size: clamp(3.75rem, 2.75rem + 5vw, 8.75rem);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.jorney__title span {
+  font-style: italic;
+  text-transform: none;
+}
+
+.roadmap {
+  width: 100%;
+  background-color: var(--green-light-bg);
+}
+
+.roadmap__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 2.125rem + 1.88vw, 4.375rem);
+  font-weight: 400;
+  color: var(--dark-gray-color);
+  text-transform: uppercase;
+}
+
+.roadmap__text {
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--dark-gray-color);
+}
+
 .international {
   width: 100%;
   position: relative;

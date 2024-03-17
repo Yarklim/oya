@@ -1,0 +1,20 @@
+.roadmap {
+  width: 100%;
+
+  background-color: var(--green-light-bg);
+}
+
+.roadmap__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 2.125rem + 1.88vw, 4.375rem); // 40 - 70
+  font-weight: 400;
+  color: var(--dark-gray-color);
+  text-transform: uppercase;
+}
+
+.roadmap__text {
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem); // 14 - 18
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--dark-gray-color);
+}
