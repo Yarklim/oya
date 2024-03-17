@@ -80,6 +80,16 @@
   }
 }
 
+// ============ Links =============
+.footer__links--wrapper {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+}
+
 // ========== Navigation ==========
 .footer__nav--list {
   width: 300px;
@@ -93,16 +103,20 @@
   align-items: center;
   gap: 40px 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 100%;
     height: auto;
-
-    margin-top: 0;
-    margin-left: clamp(0.625rem, -21.25rem + 29.17vw, 13.75rem); // 10 - 220
 
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: nowrap;
+    gap: 0 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: clamp(0.625rem, -21.25rem + 29.17vw, 13.75rem); // 10 - 220
+
     gap: 0 clamp(0.938rem, -2.708rem + 4.86vw, 3.125rem); // 15 - 50
   }
 }
@@ -114,8 +128,12 @@
   gap: 40px 0;
   flex-shrink: 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     align-items: flex-start;
+    gap: 60px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
     gap: 40px 0;
   }
 
@@ -143,8 +161,6 @@
 
 // =========== Socials ============
 .footer__info--list {
-  width: 100%;
-
   margin-top: 60px;
 
   display: flex;
