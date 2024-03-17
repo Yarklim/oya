@@ -532,6 +532,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__nav--list {
     width: 100%;
+    height: auto;
     margin-top: 0;
     margin-left: clamp(0.625rem, -21.25rem + 29.17vw, 13.75rem);
     -webkit-box-orient: horizontal;
