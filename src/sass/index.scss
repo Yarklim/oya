@@ -10,6 +10,7 @@
 // ==== Utils ====
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './utils/videotube';
 
 // ========= Components =========
 @import './components/header';
@@ -29,3 +30,4 @@
 @import './layout/carousel';
 @import './layout/partners';
 @import './layout/team';
+@import './layout/video';
