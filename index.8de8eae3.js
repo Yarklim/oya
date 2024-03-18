@@ -1,2 +1,0 @@
-!function(){var t=document.querySelectorAll(".collection__filter--btn"),e=document.querySelectorAll(".collection__filter--img");function c(c){var l=c.target,i=null,n=null;l.closest(".collection__filter--btn")&&(t.forEach((function(t,c){t.classList.contains("active")&&(i=c,t.classList.remove("active"),e[i].classList.remove("visible")),t===l&&(n=c)})),l.classList.add("active"),e[n].classList.add("visible"))}t.forEach((function(t){return t.addEventListener("click",c)}))}();
-//# sourceMappingURL=index.8de8eae3.js.map
