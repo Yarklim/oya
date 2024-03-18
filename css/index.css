@@ -2670,4 +2670,45 @@ body {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.team {
+  width: 100%;
+  position: relative;
+  background-color: var(--gray-dark-bg);
+  overflow: hidden;
+}
+
+.team__title {
+  margin-left: clamp(1.563rem, 7.81vw, 9.375rem);
+  font-size: clamp(2.813rem, 2.5rem + 1.56vw, 4.375rem);
+  font-weight: 300;
+}
+
+.team__list {
+  margin-top: clamp(2.188rem, 2rem + 0.94vw, 3.125rem);
+  margin-left: clamp(1.563rem, 7.81vw, 9.375rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+     -moz-column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+          column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
+}
+
+.team__item {
+  width: clamp(15.625rem, 14.25rem + 6.88vw, 22.5rem);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.team__item--title {
+  margin-top: clamp(-0.625rem, -0.588rem - 0.19vw, -0.813rem);
+  font-size: clamp(1.25rem, 1.175rem + 0.38vw, 1.625rem);
+}
+
+.team__item--text {
+  margin-top: 12px;
+  font-size: clamp(0.75rem, 0.713rem + 0.19vw, 0.938rem);
+  line-height: 1.4;
 }/*# sourceMappingURL=index.css.map */
