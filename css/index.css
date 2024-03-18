@@ -2486,7 +2486,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px 0;
+  gap: 10px 0;
   background-color: var(--light-bg);
 }
 
@@ -2515,8 +2515,49 @@ body {
           animation-delay: calc(var(--t) / -2);
 }
 
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+}
 .carousel__content {
-  height: 366px;
+  height: clamp(10rem, 7.425rem + 12.88vw, 22.875rem);
   white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2527,7 +2568,56 @@ body {
 }
 
 .carousel__img {
-  margin: 10px;
+  height: clamp(10rem, 7.425rem + 12.88vw, 22.875rem);
+  margin: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem);
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.img-1 {
+  width: clamp(9.375rem, 6.75rem + 13.13vw, 22.5rem);
+}
+
+.img-2 {
+  width: clamp(20rem, 14.625rem + 26.88vw, 46.875rem);
+}
+
+.img-3 {
+  width: clamp(9.375rem, 6.75rem + 13.13vw, 22.5rem);
+}
+
+.img-4 {
+  width: clamp(20.625rem, 15.125rem + 27.5vw, 48.125rem);
+}
+
+.img-5 {
+  width: clamp(13.125rem, 9.5rem + 18.13vw, 31.25rem);
+}
+
+.img-6 {
+  width: clamp(9.375rem, 6.675rem + 13.5vw, 22.875rem);
+}
+
+.img-7 {
+  width: clamp(16.875rem, 12.125rem + 23.75vw, 40.625rem);
+}
+
+.img-8 {
+  width: clamp(20.625rem, 15.125rem + 27.5vw, 48.125rem);
+}
+
+.img-9 {
+  width: clamp(9.375rem, 6.75rem + 13.13vw, 22.5rem);
+}
+
+.img-10 {
+  width: clamp(16.563rem, 11.875rem + 23.44vw, 40rem);
+}
+
+.img-11 {
+  width: clamp(13.125rem, 9.5rem + 18.13vw, 31.25rem);
+}
+
+.img-12 {
+  width: clamp(7.5rem, 5.25rem + 11.25vw, 18.75rem);
 }/*# sourceMappingURL=index.css.map */

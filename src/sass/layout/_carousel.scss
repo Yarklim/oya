@@ -3,7 +3,7 @@
 
   display: flex;
   flex-direction: column;
-  gap: 20px 0;
+  gap: 10px 0;
 
   background-color: var(--light-bg);
 }
@@ -14,7 +14,6 @@
   position: relative;
 
   display: flex;
-  //   gap: 0 20px;
 
   overflow: hidden;
 
@@ -43,38 +42,90 @@
   }
 }
 
-// @keyframes animate1 {
-//   0% {
-//     transform: translateX(100%);
-//   }
-//   100% {
-//     transform: translateX(-100%);
-//   }
-// }
+@keyframes animate1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
-// @keyframes animate2 {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   100% {
-//     transform: translateX(-200%);
-//   }
-// }
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
 
 .carousel__content {
-  height: 366px;
+  height: clamp(10rem, 7.425rem + 12.88vw, 22.875rem); // 160 - 366
 
   white-space: nowrap;
 
   display: flex;
-  //   gap: 0 20px;
   flex-shrink: 0;
 
   overflow: hidden;
 }
 
 .carousel__img {
-  margin: 10px;
+  height: clamp(10rem, 7.425rem + 12.88vw, 22.875rem); // 160 - 366
+
+  margin: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem); // 10 - 20
 
   flex-shrink: 0;
+}
+
+// ========= Images List 1 ========
+.img-1 {
+  width: clamp(9.375rem, 6.75rem + 13.13vw, 22.5rem); // 150 - 360
+}
+
+.img-2 {
+  width: clamp(20rem, 14.625rem + 26.88vw, 46.875rem); // 320 - 750
+}
+
+.img-3 {
+  width: clamp(9.375rem, 6.75rem + 13.13vw, 22.5rem); // 150 - 360
+}
+
+.img-4 {
+  width: clamp(20.625rem, 15.125rem + 27.5vw, 48.125rem); // 330 - 770
+}
+
+// ========= Images List 2 ========
+.img-5 {
+  width: clamp(13.125rem, 9.5rem + 18.13vw, 31.25rem); // 210 - 500
+}
+
+.img-6 {
+  width: clamp(9.375rem, 6.675rem + 13.5vw, 22.875rem); // 150 - 366
+}
+
+.img-7 {
+  width: clamp(16.875rem, 12.125rem + 23.75vw, 40.625rem); // 270 - 650
+}
+
+.img-8 {
+  width: clamp(20.625rem, 15.125rem + 27.5vw, 48.125rem); // 330 - 770
+}
+
+// ========= Images List 3 ========
+.img-9 {
+  width: clamp(9.375rem, 6.75rem + 13.13vw, 22.5rem); // 150 - 360
+}
+
+.img-10 {
+  width: clamp(16.563rem, 11.875rem + 23.44vw, 40rem); // 265 - 640
+}
+
+.img-11 {
+  width: clamp(13.125rem, 9.5rem + 18.13vw, 31.25rem); // 210 - 500
+}
+
+.img-12 {
+  width: clamp(7.5rem, 5.25rem + 11.25vw, 18.75rem); // 120 - 300
 }
