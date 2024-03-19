@@ -119,17 +119,21 @@
 }
 
 .roadmap__item:nth-child(odd) .roadmap__item--date {
-  position: absolute;
-  top: 0;
-  left: 805px;
-  transform: translateX(-50%);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 805px;
+    transform: translateX(-50%);
+  }
 }
 
 .roadmap__item:nth-child(even) .roadmap__item--date {
-  position: absolute;
-  top: 0;
-  left: -465px;
-  transform: translateX(50%);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: -465px;
+    transform: translateX(50%);
+  }
 }
 
 .roadmap__item--dots {
@@ -146,38 +150,58 @@
 }
 
 .roadmap__item:nth-child(odd) .roadmap__item--dots {
-  position: absolute;
-  top: 0;
-  left: 610px;
-  transform: translateX(-50%) rotate(180deg);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 610px;
+    transform: translateX(-50%) rotate(180deg);
+  }
 }
 
 .roadmap__item:nth-child(even) .roadmap__item--dots {
-  position: absolute;
-  top: 0;
-  left: -200px;
-  transform: translateX(50%);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    transform: translateX(50%);
+  }
 }
 
 .roadmap__item--line {
+  width: 2px;
+  height: 50px; // 50 -
+
+  margin-left: 13px;
+
+  background-color: var(--light-smooth-color);
+
   @media screen and (min-width: 768px) {
+    width: 5px;
+    height: 130px;
+
+    margin-left: 0;
+
     position: absolute;
     top: 0;
   }
 }
 
 .roadmap__item:nth-child(odd) .roadmap__item--line {
-  position: absolute;
-  top: 50px;
-  left: 810px;
-  transform: translateX(-50%);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50px;
+    left: 810px;
+    transform: translateX(-50%);
+  }
 }
 
 .roadmap__item:nth-child(even) .roadmap__item--line {
-  position: absolute;
-  top: 50px;
-  left: -340px;
-  transform: translateX(50%);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50px;
+    left: -315px;
+    transform: translateX(50%);
+  }
 }
 
 // ========== BG Circles ==========
@@ -188,6 +212,10 @@
 
   opacity: 0.4;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    opacity: 0.2;
+  }
 
   &.circle-1 {
     width: 150px; // 150 -
