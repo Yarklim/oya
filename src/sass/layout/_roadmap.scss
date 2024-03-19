@@ -34,6 +34,7 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 150px 620px;
   }
 }
 
@@ -43,17 +44,51 @@
   flex-direction: column;
   flex-basis: 100%;
   gap: 12px 0; // 12 -
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 620px) / 2);
+    gap: 20px 0;
+
+    &:nth-child(3) {
+      margin-top: -300px;
+    }
+    &:nth-child(6) {
+      margin-top: 200px;
+    }
+    &:nth-child(7) {
+      margin-top: -300px;
+    }
+    &:nth-child(9) {
+      margin-top: -350px;
+    }
+    &:nth-child(12) {
+      margin-top: 250px;
+    }
+  }
 }
 
-.roadmap__item--date,
 .roadmap__item--title {
-  font-size: 24px; // 24 -
+  font-size: 24px; //
   font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: clamp(
+      0.75rem,
+      -0.25rem + 2.08vw,
+      2.25rem
+    ); // 24 - 36 (768 - 1920)
+  }
 }
 
 .roadmap__item--text {
   font-size: 12px; // 12 -
   line-height: 1.4;
+
+  @media screen and (min-width: 768px) {
+    font-size: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem); // 12 - 20
+  }
 }
 
 .roadmap__item--img {
@@ -61,16 +96,82 @@
 }
 
 // ========== Item Anomate ==========
+.roadmap__item--date {
+  font-size: 24px; //
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    width: 150px;
+
+    text-align: center;
+    font-size: clamp(
+      0.75rem,
+      -0.25rem + 2.08vw,
+      2.25rem
+    ); // 24 - 36 (768 - 1920)
+  }
+}
+
+.roadmap__item:nth-child(odd) .roadmap__item--date {
+  position: absolute;
+  top: 0;
+  left: 805px;
+  transform: translateX(-50%);
+}
+
+.roadmap__item:nth-child(even) .roadmap__item--date {
+  position: absolute;
+  top: 0;
+  left: -465px;
+  transform: translateX(50%);
+}
+
 .roadmap__item--dots {
-  width: 30px; // 30 - 75
+  width: 30px; // 30 -
 
   margin: 12 0;
 
   transform: rotate(90deg);
 
   @media screen and (min-width: 768px) {
+    width: clamp(1.875rem, 3.91vw, 4.688rem); // 30 - 75
     transform: rotate(0);
   }
+}
+
+.roadmap__item:nth-child(odd) .roadmap__item--dots {
+  position: absolute;
+  top: 0;
+  left: 610px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.roadmap__item:nth-child(even) .roadmap__item--dots {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  transform: translateX(50%);
+}
+
+.roadmap__item--line {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.roadmap__item:nth-child(odd) .roadmap__item--line {
+  position: absolute;
+  top: 50px;
+  left: 810px;
+  transform: translateX(-50%);
+}
+
+.roadmap__item:nth-child(even) .roadmap__item--line {
+  position: absolute;
+  top: 50px;
+  left: -340px;
+  transform: translateX(50%);
 }
 
 // ========== BG Circles ==========
@@ -85,10 +186,20 @@
   &.circle-1 {
     width: 150px; // 150 -
     height: 150px; // 150 -
+
+    @media screen and (min-width: 768px) {
+      width: clamp(9.375rem, -3.125rem + 26.04vw, 28.125rem); // 150 - 450
+      height: clamp(9.375rem, -3.125rem + 26.04vw, 28.125rem); // 150 - 450
+    }
   }
 
   &.circle-2 {
     width: 460px; // 460 -
     height: 460px; // 460 -
+
+    @media screen and (min-width: 768px) {
+      width: clamp(28.75rem, -2.083rem + 64.24vw, 75rem); // 460 - 1200
+      height: clamp(28.75rem, -2.083rem + 64.24vw, 75rem); // 460 - 1200
+    }
   }
 }
