@@ -2073,6 +2073,9 @@ body {
   width: 100%;
   position: relative;
   background-color: var(--green-light-bg);
+  background-image: url(../src/icons/collections/mountaine1.svg), url(../src/icons/collections/mountaine2.svg), url(../src/icons/collections/wave1.svg), url(../src/icons/collections/wave2.svg);
+  background-repeat: no-repeat;
+  background-position: left 60%, left 60%, left bottom, left bottom;
   overflow: hidden;
 }
 
