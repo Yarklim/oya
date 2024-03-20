@@ -43,7 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: clamp(4.375rem, 1.042rem + 6.94vw, 9.375rem)
-      clamp(12.5rem, -5rem + 36.46vw, 38.75rem); // 70 - 150, 200 - 620
+      clamp(14.375rem, -1.875rem + 33.85vw, 38.75rem); // 70 - 150, 230 - 620
   }
 }
 
@@ -58,24 +58,30 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(
-      (100% - clamp(12.5rem, -5rem + 36.46vw, 38.75rem)) / 2
-    ); // 200 - 620
+      (100% - clamp(14.375rem, -1.875rem + 33.85vw, 38.75rem)) / 2
+    ); // 230 - 620
     gap: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem) 0; // 12 - 20
 
     &:nth-child(3) {
-      margin-top: -175px; // -175 - -300
+      margin-top: calc(
+        clamp(10rem, 3.333rem + 13.89vw, 20rem) * -1
+      ); // -160 - -320
     }
     &:nth-child(6) {
-      margin-top: 200px;
+      margin-top: clamp(6.25rem, 2.083rem + 8.68vw, 12.5rem); // 100 - 200
     }
     &:nth-child(7) {
-      margin-top: -300px;
+      margin-top: calc(
+        clamp(6.25rem, -2.083rem + 17.36vw, 18.75rem) * -1
+      ); // -100 - -300
     }
     &:nth-child(9) {
-      margin-top: -350px;
+      margin-top: calc(
+        clamp(15.625rem, 11.458rem + 8.68vw, 21.875rem) * -1
+      ); // -250 - -350
     }
     &:nth-child(12) {
-      margin-top: 250px;
+      margin-top: clamp(6.25rem, 13.02vw, 15.625rem); // 100 - 250
     }
   }
 }
@@ -106,16 +112,14 @@
   flex-shrink: 0;
 }
 
-// ========== Item Anomate ==========
+// ========== Item Animate ==========
 .roadmap__item--date-wrapper {
   display: flex;
   flex-direction: column;
   gap: 12px 0; // 12 -
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    align-items: center;
-    gap: 0 70px; // 20 -
+    display: none;
   }
 }
 
@@ -123,134 +127,10 @@
   font-size: 24px; //
   font-weight: 500;
 
+  flex-shrink: 0;
+
   @media screen and (min-width: 768px) {
-    width: 150px;
-
-    text-align: center;
-    font-size: clamp(
-      1.125rem,
-      0.375rem + 1.56vw,
-      2.25rem
-    ); // 18 - 36 (768 - 1920)
-  }
-}
-
-.roadmap__item:nth-child(odd) .roadmap__item--date-wrapper {
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 50%; // - 150
-    transform: translateX(calc(-50% - 75px));
-  }
-}
-
-.roadmap__item:nth-child(even) .roadmap__item--date-wrapper {
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(calc(-50% + 75px));
-  }
-}
-
-.roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    content: '';
-
-    width: 3px;
-    height: 50px;
-
-    position: absolute;
-    top: 50px;
-
-    background-color: var(--light-smooth-color);
-  }
-}
-
-.roadmap__item:nth-child(2) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 25%;
-  }
-}
-
-.roadmap__item:nth-child(3) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 75%;
-  }
-}
-
-.roadmap__item:nth-child(4) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 25%;
-  }
-}
-
-.roadmap__item:nth-child(5) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 75%;
-  }
-}
-
-.roadmap__item:nth-child(6) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 25%;
-  }
-}
-
-.roadmap__item:nth-child(7) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 75%;
-  }
-}
-
-.roadmap__item:nth-child(8) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 25%;
-  }
-}
-
-.roadmap__item:nth-child(9) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 75%;
-  }
-}
-
-.roadmap__item:nth-child(10) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 25%;
-  }
-}
-
-.roadmap__item:nth-child(11) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    height: 50px;
-
-    left: 75%;
-  }
-}
-
-.roadmap__item:nth-child(12) .roadmap__item--date-wrapper::after {
-  @media screen and (min-width: 768px) {
-    width: 0;
-    height: 0;
+    font-size: clamp(1.125rem, 0.375rem + 1.56vw, 2.25rem); // 18 - 36
   }
 }
 
@@ -260,25 +140,73 @@
   margin: 12 0;
 
   transform: rotate(90deg);
+}
+
+// ========== Date List ==========
+.roadmap__date--list {
+  display: none;
 
   @media screen and (min-width: 768px) {
-    margin: 0;
-    width: clamp(1.875rem, 3.91vw, 4.688rem); // 30 - 75
-    transform: rotate(0);
+    display: flex;
+    flex-direction: column;
+
+    padding-top: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem);
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
-.roadmap__item:nth-child(odd) .roadmap__item--dots {
-  @media screen and (min-width: 768px) {
-    order: 1;
-    transform: rotate(180deg);
+.roadmap__date--item {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  &:nth-child(odd) {
+    & .date__content--wrapper {
+      top: 50px;
+      left: 0;
+      transform: translateX(
+        calc(-44% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
+      ); // 12 - 40
+    }
+  }
+
+  &:nth-child(even) {
+    & .date__content--wrapper {
+      top: 0;
+      left: 50%;
+      transform: translateX(
+        calc(-100% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
+      ); // 12 - 40
+    }
+
+    & .roadmap__item--date {
+      order: 2;
+    }
+  }
+  &:nth-child(even) {
+    & .roadmap__date--dots {
+      order: 1;
+      transform: rotate(180deg);
+    }
   }
 }
 
-.roadmap__item:nth-child(odd) .roadmap__item--date {
-  @media screen and (min-width: 768px) {
-    order: 2;
-  }
+.date__content--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0 clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem); // 12 - 40
+
+  position: absolute;
+}
+
+.roadmap__date--dots {
+  width: clamp(2.5rem, 1.042rem + 3.04vw, 4.688rem); // 40 - 75
+  flex-shrink: 0;
 }
 
 // ========== BG Circles ==========
