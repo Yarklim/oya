@@ -1,10 +1,12 @@
-.jorney {
+.journey {
   width: 100%;
+
+  overflow: hidden;
 
   background: var(--green-gradient);
 }
 
-.jorney__title {
+.journey__title {
   padding-left: clamp(1.25rem, -0.375rem + 8.13vw, 9.375rem); // 20 - 150
 
   font-family: var(--font-serif);
@@ -16,4 +18,90 @@
     font-style: italic;
     text-transform: none;
   }
+}
+
+// =========== Slider ===========
+.journey__slider--wrapper {
+  display: inline-flex;
+
+  scrollbar-width: none;
+  overflow: hidden;
+
+  transform: translateX(0);
+  will-change: transform;
+
+  transition: transform 0.3s ease-out;
+
+  cursor: grab;
+}
+
+.journey__slide {
+  width: clamp(16.875rem, 8.5rem + 41.88vw, 58.75rem); // 270 - 940
+
+  padding: 0 clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem); // 15 - 150
+}
+
+.journey__slide--img {
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px #0000003d;
+
+  user-select: none;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+// ========== Navigation ==========
+.journey__slide--nav {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    margin-top: clamp(1.25rem, -1.25rem + 5.21vw, 5rem); // 20 - 80
+    margin-left: clamp(3.125rem, -1.042rem + 8.68vw, 9.375rem); // 50 - 150
+
+    display: flex;
+    gap: 0 clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+  }
+}
+
+.journey__slide--prev,
+.journey__slide--next {
+  width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem); // 70 - 180
+
+  padding: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem) 0; // 10 - 20
+}
+
+.journey__slide--nav-icon {
+  width: clamp(3.125rem, 2rem + 5.63vw, 8.75rem); // 50 - 140
+
+  fill: var(--light-smooth-color);
+}
+
+// =========== Subtitle ==========
+.journey__subtitle--wrapper {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -80px;
+  }
+}
+
+.journey__subtitle {
+  font-size: clamp(2.5rem, 2.125rem + 1.88vw, 4.375rem); // 40 - 70
+  font-weight: 300;
+  color: var(--orange-color);
+}
+
+.journey__text {
+  max-width: clamp(14.375rem, 10.375rem + 20vw, 34.375rem); // 230 - 550
+
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: clamp(1.125rem, 1.05rem + 0.38vw, 1.5rem); // 18 - 24
+  font-weight: 300;
+  color: var(--light-color);
 }
