@@ -43,7 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: clamp(4.375rem, 1.042rem + 6.94vw, 9.375rem)
-      clamp(14.375rem, -1.875rem + 33.85vw, 38.75rem); // 70 - 150, 230 - 620
+      clamp(14.438rem, -0.979rem + 32.12vw, 37.563rem); // 70 - 150, 231 - 601
   }
 }
 
@@ -54,12 +54,35 @@
   flex-basis: 100%;
   gap: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem) 0; // 12 - 20
 
-  //   position: relative;
+  position: relative;
 
   @media screen and (min-width: 768px) {
+    &:nth-child(odd) {
+      & .roadmap__item--date-wrapper {
+        right: -100%;
+        transform: translateX(-50%);
+      }
+
+      & .roadmap__item--dots {
+        transform: rotate(180deg);
+
+        order: 1;
+      }
+
+      & .roadmap__item--date {
+        order: 2;
+      }
+    }
+    &:nth-child(even) {
+      & .roadmap__item--date-wrapper {
+        left: -100%;
+        transform: translateX(50%);
+      }
+    }
+
     flex-basis: calc(
-      (100% - clamp(14.375rem, -1.875rem + 33.85vw, 38.75rem)) / 2
-    ); // 230 - 620
+      (100% - clamp(14.438rem, -0.979rem + 32.12vw, 37.563rem)) / 2
+    ); // 231 - 601
     gap: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem) 0; // 12 - 20
 
     &:nth-child(3) {
@@ -119,7 +142,13 @@
   gap: 12px 0; // 12 -
 
   @media screen and (min-width: 768px) {
-    display: none;
+    width: clamp(7.938rem, 1.563rem + 13.28vw, 17.5rem); // 127 - 280
+
+    flex-direction: row;
+    align-items: center;
+    gap: 0 clamp(0.75rem, -1.667rem + 5.03vw, 4.375rem); // 12 - 70
+
+    position: absolute;
   }
 }
 
@@ -135,119 +164,127 @@
 }
 
 .roadmap__item--dots {
-  width: 30px; // 30 -
+  width: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem); // 30 - 75
 
-  margin: 12 0;
+  margin: clamp(0.75rem, 0.525rem + 1.13vw, 1.875rem) 0; // 12 - 30
 
   transform: rotate(90deg);
+
+  @media screen and (min-width: 768px) {
+    width: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem); // 30 - 75
+
+    transform: rotate(0);
+
+    margin: 0;
+  }
 }
 
 // ========== Date List ==========
-.roadmap__date--list {
-  display: none;
+// .roadmap__date--list {
+//   display: none;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-direction: column;
 
-    padding-top: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem);
+//     padding-top: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem);
 
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+// }
 
-.roadmap__date--item {
-  display: flex;
-  align-items: center;
+// .roadmap__date--item {
+//   display: flex;
+//   align-items: center;
 
-  position: relative;
+//   position: relative;
 
-  &:nth-child(odd) {
-    & .date__content--wrapper {
-      top: 0;
-      left: 0;
-      transform: translateX(
-        calc(-44% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
-      ); // 12 - 40
-    }
-  }
+//   &:nth-child(odd) {
+//     & .date__content--wrapper {
+//       top: 0;
+//       left: 0;
+//       transform: translateX(
+//         calc(-44% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
+//       ); // 12 - 40
+//     }
+//   }
 
-  &:nth-child(even) {
-    & .date__content--wrapper {
-      top: 0;
-      left: 50%;
-      transform: translateX(
-        calc(-100% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
-      ); // 12 - 40
-    }
+//   &:nth-child(even) {
+//     & .date__content--wrapper {
+//       top: 0;
+//       left: 50%;
+//       transform: translateX(
+//         calc(-100% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
+//       ); // 12 - 40
+//     }
 
-    & .roadmap__item--date {
-      order: 2;
-    }
-  }
-  &:nth-child(even) {
-    & .roadmap__date--dots {
-      order: 1;
-      transform: rotate(180deg);
-    }
-  }
-}
+//     & .roadmap__item--date {
+//       order: 2;
+//     }
+//   }
+//   &:nth-child(even) {
+//     & .roadmap__date--dots {
+//       order: 1;
+//       transform: rotate(180deg);
+//     }
+//   }
+// }
 
-.date__content--wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0 clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem); // 12 - 40
+// .date__content--wrapper {
+//   display: flex;
+//   align-items: center;
+//   gap: 0 clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem); // 12 - 40
 
-  position: absolute;
-}
+//   position: absolute;
+// }
 
-.roadmap__date--dots {
-  width: clamp(2.5rem, 1.042rem + 3.04vw, 4.688rem); // 40 - 75
-  flex-shrink: 0;
-}
+// .roadmap__date--dots {
+//   width: clamp(2.5rem, 1.042rem + 3.04vw, 4.688rem); // 40 - 75
+//   flex-shrink: 0;
+// }
 
-.date__item-2 {
-  top: 207px;
-}
+// .date__item-2 {
+//   top: 207px;
+// }
 
-.date__item-3 {
-  top: 367px;
-}
+// .date__item-3 {
+//   top: 367px;
+// }
 
-.date__item-4 {
-  top: 567px;
-}
+// .date__item-4 {
+//   top: 567px;
+// }
 
-.date__item-5 {
-  top: 667px;
-}
+// .date__item-5 {
+//   top: 667px;
+// }
 
-.date__item-6 {
-  top: 900px;
-}
+// .date__item-6 {
+//   top: 900px;
+// }
 
-.date__item-7 {
-  top: 1001px;
-}
+// .date__item-7 {
+//   top: 1001px;
+// }
 
-.date__item-8 {
-  top: 1152px;
-}
+// .date__item-8 {
+//   top: 1152px;
+// }
 
-.date__item-9 {
-  top: 1400px;
-}
+// .date__item-9 {
+//   top: 1400px;
+// }
 
-.date__item-10 {
-  top: 1565px;
-}
+// .date__item-10 {
+//   top: 1565px;
+// }
 
-.date__item-11 {
-  top: 1668px; // 1668 - 3025
-}
+// .date__item-11 {
+//   top: 1668px; // 1668 - 3025
+// }
 
 // ========== BG Circles ==========
 .roadmap__circle--bg {
