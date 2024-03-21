@@ -2284,6 +2284,16 @@ body {
   }
 }
 
+@media screen and (max-width: 767.9px) {
+  .roadmap__item::after {
+    content: "";
+    width: 3px;
+    height: 50px;
+    margin: 0 clamp(0.938rem, 0.67rem + 1.34vw, 1.313rem);
+    background-color: var(--opacity-light-color);
+  }
+}
+
 .roadmap__item--title {
   font-size: 24px;
   font-weight: 500;
@@ -2348,7 +2358,7 @@ body {
 
 .roadmap__item--dots {
   width: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem);
-  margin: clamp(0.75rem, 0.525rem + 1.13vw, 1.875rem) 0;
+  margin: clamp(0.75rem, 0.214rem + 2.68vw, 1.5rem) 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -2358,6 +2368,126 @@ body {
     -webkit-transform: rotate(0);
             transform: rotate(0);
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-1::after {
+    content: "";
+    width: 3px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: 29%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-2::after {
+    content: "";
+    width: 3px;
+    height: 135px;
+    position: absolute;
+    top: 20px;
+    left: 71%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-3::after {
+    content: "";
+    width: 3px;
+    height: 175px;
+    position: absolute;
+    top: 20px;
+    left: 29%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-4::after {
+    content: "";
+    width: 3px;
+    height: 75px;
+    position: absolute;
+    top: 20px;
+    left: 71%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-5::after {
+    content: "";
+    width: 3px;
+    height: 205px;
+    position: absolute;
+    top: 20px;
+    left: 29%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-6::after {
+    content: "";
+    width: 3px;
+    height: 75px;
+    position: absolute;
+    top: 20px;
+    left: 71%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-7::after {
+    content: "";
+    width: 3px;
+    height: 125px;
+    position: absolute;
+    top: 20px;
+    left: 29%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-8::after {
+    content: "";
+    width: 3px;
+    height: 225px;
+    position: absolute;
+    top: 20px;
+    left: 71%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-9::after {
+    content: "";
+    width: 3px;
+    height: 160px;
+    position: absolute;
+    top: 20px;
+    left: 29%;
+    background-color: var(--opacity-light-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-10::after {
+    content: "";
+    width: 3px;
+    height: 75px;
+    position: absolute;
+    top: 20px;
+    left: 71%;
+    background-color: var(--opacity-light-color);
   }
 }
 

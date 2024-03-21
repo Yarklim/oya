@@ -109,6 +109,19 @@
   }
 }
 
+.roadmap__item::after {
+  @media screen and (max-width: 767.9px) {
+    content: '';
+
+    width: 3px;
+    height: 50px;
+
+    margin: 0 clamp(0.938rem, 0.67rem + 1.34vw, 1.313rem); // 15 - 21
+
+    background-color: var(--opacity-light-color);
+  }
+}
+
 .roadmap__item--title {
   font-size: 24px; //
   font-weight: 500;
@@ -166,7 +179,7 @@
 .roadmap__item--dots {
   width: clamp(1.875rem, 1.313rem + 2.81vw, 4.688rem); // 30 - 75
 
-  margin: clamp(0.75rem, 0.525rem + 1.13vw, 1.875rem) 0; // 12 - 30
+  margin: clamp(0.75rem, 0.214rem + 2.68vw, 1.5rem) 0; // 12 - 24
 
   transform: rotate(90deg);
 
@@ -179,112 +192,156 @@
   }
 }
 
-// ========== Date List ==========
-// .roadmap__date--list {
-//   display: none;
+// ========== Line Animation =========
+.card-1::after {
+  @media screen and (min-width: 768px) {
+    content: '';
 
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-direction: column;
+    width: 3px; // 3 -
+    height: 180px; //
 
-//     padding-top: clamp(2.5rem, 1.75rem + 3.75vw, 6.25rem);
+    position: absolute;
+    top: 20px; // 20 -
+    left: 29%;
 
-//     position: absolute;
-//     top: 0;
-//     left: 50%;
-//     transform: translateX(-50%);
-//   }
-// }
+    background-color: var(--opacity-light-color);
+  }
+}
 
-// .roadmap__date--item {
-//   display: flex;
-//   align-items: center;
+.card-2::after {
+  @media screen and (min-width: 768px) {
+    content: '';
 
-//   position: relative;
+    width: 3px; // 3 -
+    height: 135px; // 135 -
 
-//   &:nth-child(odd) {
-//     & .date__content--wrapper {
-//       top: 0;
-//       left: 0;
-//       transform: translateX(
-//         calc(-44% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
-//       ); // 12 - 40
-//     }
-//   }
+    position: absolute;
+    top: 20px; // 20 -
+    left: 71%;
 
-//   &:nth-child(even) {
-//     & .date__content--wrapper {
-//       top: 0;
-//       left: 50%;
-//       transform: translateX(
-//         calc(-100% + clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem))
-//       ); // 12 - 40
-//     }
+    background-color: var(--opacity-light-color);
+  }
+}
 
-//     & .roadmap__item--date {
-//       order: 2;
-//     }
-//   }
-//   &:nth-child(even) {
-//     & .roadmap__date--dots {
-//       order: 1;
-//       transform: rotate(180deg);
-//     }
-//   }
-// }
+.card-3::after {
+  @media screen and (min-width: 768px) {
+    content: '';
 
-// .date__content--wrapper {
-//   display: flex;
-//   align-items: center;
-//   gap: 0 clamp(0.75rem, -0.417rem + 2.43vw, 2.5rem); // 12 - 40
+    width: 3px; // 3 -
+    height: 175px; // 175 -
 
-//   position: absolute;
-// }
+    position: absolute;
+    top: 20px; // 20 -
+    left: 29%;
 
-// .roadmap__date--dots {
-//   width: clamp(2.5rem, 1.042rem + 3.04vw, 4.688rem); // 40 - 75
-//   flex-shrink: 0;
-// }
+    background-color: var(--opacity-light-color);
+  }
+}
 
-// .date__item-2 {
-//   top: 207px;
-// }
+.card-4::after {
+  @media screen and (min-width: 768px) {
+    content: '';
 
-// .date__item-3 {
-//   top: 367px;
-// }
+    width: 3px; // 3 -
+    height: 75px; // 75 -
 
-// .date__item-4 {
-//   top: 567px;
-// }
+    position: absolute;
+    top: 20px; // 20 -
+    left: 71%;
 
-// .date__item-5 {
-//   top: 667px;
-// }
+    background-color: var(--opacity-light-color);
+  }
+}
 
-// .date__item-6 {
-//   top: 900px;
-// }
+.card-5::after {
+  @media screen and (min-width: 768px) {
+    content: '';
 
-// .date__item-7 {
-//   top: 1001px;
-// }
+    width: 3px; // 3 -
+    height: 205px; // 205 -
 
-// .date__item-8 {
-//   top: 1152px;
-// }
+    position: absolute;
+    top: 20px; // 20 -
+    left: 29%;
 
-// .date__item-9 {
-//   top: 1400px;
-// }
+    background-color: var(--opacity-light-color);
+  }
+}
 
-// .date__item-10 {
-//   top: 1565px;
-// }
+.card-6::after {
+  @media screen and (min-width: 768px) {
+    content: '';
 
-// .date__item-11 {
-//   top: 1668px; // 1668 - 3025
-// }
+    width: 3px; // 3 -
+    height: 75px; // 75 -
+
+    position: absolute;
+    top: 20px; // 20 -
+    left: 71%;
+
+    background-color: var(--opacity-light-color);
+  }
+}
+
+.card-7::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+
+    width: 3px; // 3 -
+    height: 125px; // 125 -
+
+    position: absolute;
+    top: 20px; // 20 -
+    left: 29%;
+
+    background-color: var(--opacity-light-color);
+  }
+}
+
+.card-8::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+
+    width: 3px; // 3 -
+    height: 225px; // 225 -
+
+    position: absolute;
+    top: 20px; // 20 -
+    left: 71%;
+
+    background-color: var(--opacity-light-color);
+  }
+}
+
+.card-9::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+
+    width: 3px; // 3 -
+    height: 160px; // 160 -
+
+    position: absolute;
+    top: 20px; // 20 -
+    left: 29%;
+
+    background-color: var(--opacity-light-color);
+  }
+}
+
+.card-10::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+
+    width: 3px; // 3 -
+    height: 75px; // 75 -
+
+    position: absolute;
+    top: 20px; // 20 -
+    left: 71%;
+
+    background-color: var(--opacity-light-color);
+  }
+}
 
 // ========== BG Circles ==========
 .roadmap__circle--bg {
