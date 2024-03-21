@@ -197,12 +197,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 180px; //
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(11.25rem, 8.333rem + 6.08vw, 15.625rem); // 180 - 250
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 29%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(2.125rem, 0.625rem + 3.13vw, 4.375rem); // 34 - 70
 
     background-color: var(--opacity-light-color);
   }
@@ -212,12 +212,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 135px; // 135 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(8.438rem, 3.438rem + 10.42vw, 15.938rem); // 135 - 255
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 71%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(5.5rem, 0.417rem + 10.59vw, 13.125rem); // 88 - 210
 
     background-color: var(--opacity-light-color);
   }
@@ -227,12 +227,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 175px; // 175 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(10.938rem, 8.021rem + 6.08vw, 15.313rem); // 175 - 245
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 29%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(2.125rem, 0.625rem + 3.13vw, 4.375rem); // 34 - 70
 
     background-color: var(--opacity-light-color);
   }
@@ -242,12 +242,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 75px; // 75 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(4.688rem, 2.188rem + 5.21vw, 8.438rem); // 75 - 135
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 71%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(5.5rem, 0.417rem + 10.59vw, 13.125rem); // 88 - 210
 
     background-color: var(--opacity-light-color);
   }
@@ -257,12 +257,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 205px; // 205 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(12.813rem, 11.354rem + 3.04vw, 15rem); // 205 - 240
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 29%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(2.125rem, 0.625rem + 3.13vw, 4.375rem); // 34 - 70
 
     background-color: var(--opacity-light-color);
   }
@@ -272,12 +272,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 75px; // 75 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(4.688rem, -1.771rem + 13.45vw, 14.375rem); // 75 - 230
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 71%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(5.5rem, 0.417rem + 10.59vw, 13.125rem); // 88 - 210
 
     background-color: var(--opacity-light-color);
   }
@@ -287,12 +287,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 125px; // 125 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(7.813rem, 2.813rem + 10.42vw, 15.313rem); // 125 - 245
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 29%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(2.125rem, 0.625rem + 3.13vw, 4.375rem); // 34 - 70
 
     background-color: var(--opacity-light-color);
   }
@@ -302,12 +302,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 225px; // 225 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(14.063rem, 11.771rem + 4.77vw, 17.5rem); // 225 - 280
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 71%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(5.5rem, 0.417rem + 10.59vw, 13.125rem); // 88 - 210
 
     background-color: var(--opacity-light-color);
   }
@@ -317,12 +317,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 160px; // 160 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(10rem, 5.417rem + 9.55vw, 16.875rem); // 160 - 270
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 29%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(2.125rem, 0.625rem + 3.13vw, 4.375rem); // 34 - 70
 
     background-color: var(--opacity-light-color);
   }
@@ -332,12 +332,12 @@
   @media screen and (min-width: 768px) {
     content: '';
 
-    width: 3px; // 3 -
-    height: 75px; // 75 -
+    width: clamp(0.188rem, 0.063rem + 0.26vw, 0.375rem); // 3 - 6
+    height: clamp(4.688rem, 0.313rem + 9.11vw, 11.25rem); // 75 - 180
 
     position: absolute;
-    top: 20px; // 20 -
-    left: 71%;
+    top: clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+    left: clamp(5.5rem, 0.417rem + 10.59vw, 13.125rem); // 88 - 210
 
     background-color: var(--opacity-light-color);
   }
