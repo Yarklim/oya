@@ -22,6 +22,8 @@
 
 // =========== Slider ===========
 .journey__slider--container {
+  //   width: calc(100% * 5);
+
   display: inline-flex;
 
   scrollbar-width: none;
@@ -37,6 +39,7 @@
 
 .journey__slide {
   width: clamp(16.875rem, 8.5rem + 41.88vw, 58.75rem); // 270 - 940
+  //   width: 300px;
 
   padding: 0 clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem); // 15 - 150
 }

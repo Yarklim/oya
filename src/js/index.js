@@ -1,4 +1,4 @@
 import './international';
 import './collection';
-import './slider';
+import './journey-slider';
 import './videotube.min';
