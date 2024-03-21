@@ -21,7 +21,7 @@
 }
 
 // =========== Slider ===========
-.journey__slider--wrapper {
+.journey__slider--container {
   display: inline-flex;
 
   scrollbar-width: none;
@@ -43,11 +43,20 @@
 
 .journey__slide--img {
   border-radius: 50%;
-  box-shadow: 3px 3px 10px #0000003d;
+  box-shadow: 5px 5px 10px -1px #0000003d;
 
   user-select: none;
 
   transition: transform 0.3s ease-in-out;
+}
+
+.grabbing {
+  cursor: grabbing;
+
+  & .journey__slide--img {
+    transform: scale(0.9);
+    box-shadow: 3px 3px 10px -1px #0000003d;
+  }
 }
 
 // ========== Navigation ==========
