@@ -2054,12 +2054,16 @@ body {
 }
 .journey {
   width: 100%;
+  position: relative;
   overflow: hidden;
   background: var(--green-gradient);
 }
 
 .journey__title {
-  padding-left: clamp(1.25rem, -0.375rem + 8.13vw, 9.375rem);
+  position: absolute;
+  top: clamp(2.188rem, 1.125rem + 5.31vw, 7.5rem);
+  left: clamp(1.25rem, -0.375rem + 8.13vw, 9.375rem);
+  z-index: 0;
   font-family: var(--font-serif);
   font-size: clamp(3.75rem, 2.75rem + 5vw, 8.75rem);
   font-weight: 300;
@@ -2069,15 +2073,23 @@ body {
   font-style: italic;
   text-transform: none;
 }
+@media screen and (min-width: 425px) {
+  .journey__title {
+    z-index: 2;
+  }
+}
 
 .journey__slider--container {
+  width: 500%;
+  margin-top: 100px;
+  margin-left: clamp(2.5rem, -3.125rem + 28.13vw, 30.625rem);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   scrollbar-width: none;
   overflow: hidden;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(calc(-20% + clamp(2.5rem, -3.125rem + 28.13vw, 30.625rem) * 2));
+          transform: translateX(calc(-20% + clamp(2.5rem, -3.125rem + 28.13vw, 30.625rem) * 2));
   will-change: transform;
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
@@ -2086,24 +2098,40 @@ body {
   cursor: -webkit-grab;
   cursor: grab;
 }
+@media screen and (min-width: 768px) {
+  .journey__slider--container {
+    margin-top: 40px;
+  }
+}
 
 .journey__slide {
-  width: clamp(16.875rem, 8.5rem + 41.88vw, 58.75rem);
-  padding: 0 clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem);
+  width: clamp(15rem, 6.25rem + 43.75vw, 58.75rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .journey__slide--img {
-  border-radius: 50%;
-  -webkit-box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.2392156863);
-          box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.2392156863);
+  opacity: 0.3;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.journey__slide--img.active-img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .grabbing {
@@ -2113,8 +2141,6 @@ body {
 .grabbing .journey__slide--img {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.2392156863);
-          box-shadow: 3px 3px 10px -1px rgba(0, 0, 0, 0.2392156863);
 }
 
 .journey__slide--nav {
@@ -2123,7 +2149,7 @@ body {
 @media screen and (min-width: 768px) {
   .journey__slide--nav {
     margin-top: clamp(1.25rem, -1.25rem + 5.21vw, 5rem);
-    margin-left: clamp(3.125rem, -1.042rem + 8.68vw, 9.375rem);
+    margin-left: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2259,7 +2285,9 @@ body {
     gap: clamp(0.75rem, 0.417rem + 0.69vw, 1.25rem) 0;
   }
   .roadmap__item:nth-child(odd) .roadmap__item--date-wrapper {
-    right: -1250%;
+    right: -100%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .roadmap__item:nth-child(odd) .roadmap__item--dots {
     -webkit-transform: rotate(180deg);
@@ -2274,7 +2302,9 @@ body {
             order: 2;
   }
   .roadmap__item:nth-child(even) .roadmap__item--date-wrapper {
-    left: -75%;
+    left: -100%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
   }
   .roadmap__item:nth-child(3) {
     margin-top: calc(clamp(10rem, 3.333rem + 13.89vw, 20rem) * -1);

@@ -75,8 +75,8 @@
   @media screen and (min-width: 768px) {
     &:nth-child(odd) {
       & .roadmap__item--date-wrapper {
-        right: -1250%;
-        // transform: translateX(-50%);
+        right: -100%;
+        transform: translateX(-50%);
       }
 
       & .roadmap__item--dots {
@@ -91,8 +91,8 @@
     }
     &:nth-child(even) {
       & .roadmap__item--date-wrapper {
-        left: -75%;
-        // transform: translateX(50%);
+        left: -100%;
+        transform: translateX(50%);
       }
     }
 
