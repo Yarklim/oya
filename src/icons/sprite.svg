@@ -5,7 +5,7 @@
 <path fill="none" stroke="#363a45" style="stroke: var(--color2, #363a45)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.2" d="M16 19.2l4-3.586M16 19.2l-4-3.586M16 19.2v-8"></path>
 </symbol>
 <symbol id="location" viewBox="0 0 28 32">
-<path fill="#d7ae9c" style="fill: var(--color3, #d7ae9c)" d="M20.183 17.277l-6.332 6.332-6.332-6.332c-1.621-1.621-2.623-3.859-2.623-6.332 0-4.946 4.009-8.955 8.955-8.955s8.955 4.009 8.955 8.955c0 2.473-1.002 4.712-2.623 6.332v0z"></path>
+<path d="M20.183 17.277l-6.332 6.332-6.332-6.332c-1.621-1.621-2.623-3.859-2.623-6.332 0-4.946 4.009-8.955 8.955-8.955s8.955 4.009 8.955 8.955c0 2.473-1.002 4.712-2.623 6.332v0z"></path>
 <path fill="none" stroke="#3b3633" style="stroke: var(--color4, #3b3633)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4776" d="M13.849 15.164c2.33 0 4.219-1.889 4.219-4.219s-1.889-4.219-4.219-4.219v0c-2.33 0-4.219 1.889-4.219 4.219s1.889 4.219 4.219 4.219v0zM13.849 12.697c-0.967 0-1.751-0.784-1.751-1.751s0.784-1.751 1.751-1.751v0c0.967 0 1.751 0.784 1.751 1.751s-0.784 1.751-1.751 1.751v0z"></path>
 </symbol>
 <symbol id="logo" viewBox="0 0 98 32">

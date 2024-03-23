@@ -2130,7 +2130,8 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.journey__slide--img.active-img {
+
+.journey__slide.active-img .journey__slide--img {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -2449,6 +2450,39 @@ body {
   .roadmap__circle--bg.circle-2 {
     width: clamp(28.75rem, -2.083rem + 64.24vw, 75rem);
     height: clamp(28.75rem, -2.083rem + 64.24vw, 75rem);
+  }
+}
+
+.hills {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-image: url("../src/images/backgrounds/earth@mob.webp");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hills {
+    background-image: url("../src/images/backgrounds/earth@mob2x.webp");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hills {
+    background-image: url("../src/images/backgrounds/earth@tab.webp");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hills {
+    background-image: url("../src/images/backgrounds/earth@tab2x.webp");
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hills {
+    background-image: url("../src/images/backgrounds/earth@desk.webp");
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hills {
+    background-image: url("../src/images/backgrounds/earth@desk2x.webp");
   }
 }
 
@@ -3126,10 +3160,12 @@ body {
 
 .team__list {
   margin-top: clamp(2.188rem, 2rem + 0.94vw, 3.125rem);
-  margin-left: clamp(1.563rem, 7.81vw, 9.375rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
      -moz-column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);
           column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem);

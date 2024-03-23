@@ -75,12 +75,12 @@
 
   transform: scale(0.75);
   transition: all 0.3s ease-in-out;
+}
 
-  &.active-img {
-    opacity: 1;
+.journey__slide.active-img .journey__slide--img {
+  opacity: 1;
 
-    transform: scale(1);
-  }
+  transform: scale(1);
 }
 
 .grabbing {
