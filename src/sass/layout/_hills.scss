@@ -1,6 +1,8 @@
 .hills {
   width: 100%;
 
+  position: relative;
+
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -65,6 +67,72 @@
     }
   }
 }
+
+// ============== Background icons ==============
+.hills__bg-icons--wrapper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hills__bg-icon {
+  width: clamp(2.5rem, 0.833rem + 3.47vw, 5rem); // 40 - 80
+  height: clamp(2.5rem, 0.833rem + 3.47vw, 5rem); // 40 - 80
+
+  fill: var(--light-gray-color);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &.nav-active {
+    fill: var(--orange-color);
+  }
+
+  &.hills-icon__1 {
+    top: clamp(18.125rem, -0.625rem + 39.06vw, 46.25rem); // 290 - 740
+    left: clamp(5.625rem, -0.625rem + 13.02vw, 15rem); // 90 - 240
+  }
+
+  &.hills-icon__2 {
+    top: clamp(20.625rem, -1.042rem + 45.14vw, 53.125rem); // 330 - 850
+    left: clamp(19.063rem, 0.521rem + 38.63vw, 46.875rem); // 305 - 750
+  }
+
+  &.hills-icon__3 {
+    top: clamp(16.25rem, -0.417rem + 34.72vw, 41.25rem); // 260 - 660
+    left: clamp(9.688rem, -0.521rem + 21.27vw, 25rem); // 155 - 400
+  }
+
+  &.hills-icon__4 {
+    top: clamp(23.75rem, 0.833rem + 47.74vw, 58.125rem); // 380 - 930
+    left: clamp(16.563rem, 0.521rem + 33.42vw, 40.625rem); // 265 - 650
+  }
+
+  &.hills-icon__5 {
+    top: clamp(10.313rem, -0.313rem + 22.14vw, 26.25rem); // 165 - 420
+    left: clamp(18.125rem, -0.208rem + 38.19vw, 45.625rem); // 290 - 730
+  }
+
+  &.hills-icon__6 {
+    top: clamp(11.563rem, -1.563rem + 27.34vw, 31.25rem); // 185 - 500
+    left: clamp(19.688rem, 1.146rem + 38.63vw, 47.5rem); // 315 - 760
+  }
+
+  &.hills-icon__7 {
+    top: clamp(12.188rem, -0.521rem + 26.48vw, 31.25rem); // 195 - 500
+    left: clamp(13.438rem, -0.938rem + 29.95vw, 35rem); // 215 - 560
+  }
+
+  &.hills-icon__8 {
+    top: clamp(16.563rem, -1.146rem + 36.89vw, 43.125rem); // 265 - 690
+    left: clamp(15.938rem, -0.521rem + 34.29vw, 40.625rem); // 255 - 650
+  }
+}
+
+// ================ Content ===============
 
 .hills__wrapper {
   width: 95%;
@@ -305,7 +373,7 @@
     text-transform: uppercase;
   }
 
-  &.nav-action {
+  &.nav-active {
     background: var(--orange-bg);
     color: var(--dark-blue-color);
   }

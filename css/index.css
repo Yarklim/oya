@@ -2457,6 +2457,7 @@ body {
 
 .hills {
   width: 100%;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -2492,6 +2493,59 @@ body {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@desk2x.webp");
     background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@desk2x.webp");
   }
+}
+
+.hills__bg-icons--wrapper {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hills__bg-icons--wrapper {
+    display: block;
+  }
+}
+
+.hills__bg-icon {
+  width: clamp(2.5rem, 0.833rem + 3.47vw, 5rem);
+  height: clamp(2.5rem, 0.833rem + 3.47vw, 5rem);
+  fill: var(--light-gray-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hills__bg-icon.nav-active {
+  fill: var(--orange-color);
+}
+.hills__bg-icon.hills-icon__1 {
+  top: clamp(18.125rem, -0.625rem + 39.06vw, 46.25rem);
+  left: clamp(5.625rem, -0.625rem + 13.02vw, 15rem);
+}
+.hills__bg-icon.hills-icon__2 {
+  top: clamp(20.625rem, -1.042rem + 45.14vw, 53.125rem);
+  left: clamp(19.063rem, 0.521rem + 38.63vw, 46.875rem);
+}
+.hills__bg-icon.hills-icon__3 {
+  top: clamp(16.25rem, -0.417rem + 34.72vw, 41.25rem);
+  left: clamp(9.688rem, -0.521rem + 21.27vw, 25rem);
+}
+.hills__bg-icon.hills-icon__4 {
+  top: clamp(23.75rem, 0.833rem + 47.74vw, 58.125rem);
+  left: clamp(16.563rem, 0.521rem + 33.42vw, 40.625rem);
+}
+.hills__bg-icon.hills-icon__5 {
+  top: clamp(10.313rem, -0.313rem + 22.14vw, 26.25rem);
+  left: clamp(18.125rem, -0.208rem + 38.19vw, 45.625rem);
+}
+.hills__bg-icon.hills-icon__6 {
+  top: clamp(11.563rem, -1.563rem + 27.34vw, 31.25rem);
+  left: clamp(19.688rem, 1.146rem + 38.63vw, 47.5rem);
+}
+.hills__bg-icon.hills-icon__7 {
+  top: clamp(12.188rem, -0.521rem + 26.48vw, 31.25rem);
+  left: clamp(13.438rem, -0.938rem + 29.95vw, 35rem);
+}
+.hills__bg-icon.hills-icon__8 {
+  top: clamp(16.563rem, -1.146rem + 36.89vw, 43.125rem);
+  left: clamp(15.938rem, -0.521rem + 34.29vw, 40.625rem);
 }
 
 .hills__wrapper {
@@ -2754,7 +2808,7 @@ body {
   color: inherit;
   text-transform: uppercase;
 }
-.hills__slider--nav-item.nav-action {
+.hills__slider--nav-item.nav-active {
   background: var(--orange-bg);
   color: var(--dark-blue-color);
 }
