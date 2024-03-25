@@ -202,6 +202,7 @@ body {
   --dark-bg: #3b3633;
   --black-bg: #181b1e;
   --opacity-light-bg: #ffffff10;
+  --opacity-blue-bg: #363a455e;
   --opacity-btnHover-bg: #ffffff42;
   --opacity-socials-bg: #ffffff38;
   --opacity-socialsHover-bg: #ffffff73;
@@ -2456,35 +2457,40 @@ body {
 
 .hills {
   width: 100%;
-  background-color: var(--dark-blue-color);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-image: url("../src/images/backgrounds/earth@mob.webp");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@mob.webp");
+  background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@mob.webp");
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hills {
-    background-image: url("../src/images/backgrounds/earth@mob2x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@mob2x.webp");
+    background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@mob2x.webp");
   }
 }
 @media screen and (min-width: 768px) {
   .hills {
-    background-image: url("../src/images/backgrounds/earth@tab.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@tab.webp");
+    background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@tab.webp");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hills {
-    background-image: url("../src/images/backgrounds/earth@tab2x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@tab2x.webp");
+    background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@tab2x.webp");
   }
 }
 @media screen and (min-width: 1440px) {
   .hills {
-    background-image: url("../src/images/backgrounds/earth@desk.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@desk.webp");
+    background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@desk.webp");
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .hills {
-    background-image: url("../src/images/backgrounds/earth@desk2x.webp");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(62, 64, 82, 0.4)), to(rgba(62, 64, 82, 0.4))), url("../src/images/backgrounds/earth@desk2x.webp");
+    background-image: linear-gradient(to right, rgba(62, 64, 82, 0.4), rgba(62, 64, 82, 0.4)), url("../src/images/backgrounds/earth@desk2x.webp");
   }
 }
 
@@ -2512,24 +2518,24 @@ body {
 }
 
 .hills__descr {
-  margin-top: 50px;
+  margin-top: clamp(3.125rem, 2.679rem + 2.23vw, 3.75rem);
 }
 .hills__descr h2 {
   font-family: var(--font-serif);
-  font-size: 45px;
+  font-size: clamp(2.813rem, 1.696rem + 5.58vw, 4.375rem);
   font-weight: 400;
   color: var(--d-7-ae-9-c, #d7ae9c);
 }
 .hills__descr p {
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: clamp(0.938rem, 0.491rem + 2.23vw, 1.563rem);
+  font-size: clamp(0.875rem, 0.696rem + 0.89vw, 1.125rem);
   font-weight: 300;
   line-height: 1.4;
   color: var(--light-color);
 }
 .hills__descr p span {
   display: block;
-  margin-top: 10px;
+  margin-top: clamp(0.625rem, 0.402rem + 1.12vw, 0.938rem);
 }
 
 .hills__coord--wrapper {
@@ -2567,7 +2573,7 @@ body {
           flex-direction: column;
 }
 .hills__slider--nav-wrapper p {
-  font-size: 17px;
+  font-size: clamp(1.063rem, 0.75rem + 1.56vw, 1.5rem);
   font-weight: 300;
   line-height: 1.4;
   color: var(--light-color);
@@ -2600,7 +2606,7 @@ body {
 }
 
 .hills__slider--nav-list {
-  margin-top: 10px;
+  margin-top: clamp(0.625rem, 0.179rem + 2.23vw, 1.25rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2610,7 +2616,7 @@ body {
 }
 
 .hills__slider--nav-item {
-  padding: 7px 15px;
+  padding: clamp(0.438rem, 0.304rem + 0.67vw, 0.625rem) clamp(0.938rem, 0.714rem + 1.12vw, 1.25rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2634,7 +2640,7 @@ body {
           transform: scale(0.95);
 }
 .hills__slider--nav-item p {
-  font-size: 10px;
+  font-size: clamp(0.625rem, 0.357rem + 1.34vw, 1rem);
   font-weight: 600;
   line-height: 1.3;
   color: inherit;
@@ -2646,12 +2652,12 @@ body {
 }
 
 .hills__slider--container {
-  width: 1270px;
-  margin-top: 22px;
+  width: calc(clamp(9.375rem, 4.018rem + 26.79vw, 16.875rem) * 8 + 105px);
+  margin-top: clamp(1.375rem, 1.018rem + 1.79vw, 1.875rem);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 0 10px;
+  gap: 0 15px;
   scrollbar-width: none;
   overflow: hidden;
   -webkit-transform: translateX(0);
@@ -2665,7 +2671,7 @@ body {
   cursor: grab;
 }
 .hills__slide {
-  width: 150px;
+  width: clamp(9.375rem, 4.018rem + 26.79vw, 16.875rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
