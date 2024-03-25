@@ -183,7 +183,7 @@
   margin-top: clamp(3.125rem, 2.679rem + 2.23vw, 3.75rem); // 50 - 60
 
   @media screen and (min-width: 768px) {
-    margin-top: clamp(1.25rem, -3.083rem + 9.03vw, 7.75rem); // 20 - 124
+    margin-top: clamp(0.938rem, -1.771rem + 5.64vw, 5rem); // 15 - 80
   }
 
   & h2 {
@@ -231,7 +231,7 @@
   color: var(--opacity-btnHover-bg);
 
   @media screen and (min-width: 768px) {
-    margin-top: clamp(1.875rem, -1.042rem + 6.08vw, 6.25rem); // 30 - 100
+    margin-top: clamp(1.875rem, -3.125rem + 10.42vw, 9.375rem); // 30 - 150
 
     gap: 0 clamp(0.313rem, 0.104rem + 0.43vw, 0.625rem); // 5 - 10
   }

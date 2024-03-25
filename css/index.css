@@ -2605,7 +2605,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hills__descr {
-    margin-top: clamp(1.25rem, -3.083rem + 9.03vw, 7.75rem);
+    margin-top: clamp(0.938rem, -1.771rem + 5.64vw, 5rem);
   }
 }
 .hills__descr h2 {
@@ -2655,7 +2655,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hills__coord--wrapper {
-    margin-top: clamp(1.875rem, -1.042rem + 6.08vw, 6.25rem);
+    margin-top: clamp(1.875rem, -3.125rem + 10.42vw, 9.375rem);
     gap: 0 clamp(0.313rem, 0.104rem + 0.43vw, 0.625rem);
   }
 }
