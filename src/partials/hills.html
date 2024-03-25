@@ -1,23 +1,421 @@
 <section class="section hills">
   <div class="hills__wrapper">
-    <article class="hills__descr">
-      <h2 class="hills__title">Damac Hills</h2>
-      <p class="hills__text">
-        We are forming a New Earth community delivering solutions that optimize
-        activity, longevity, and wellness in unforgettable locations around the
-        world. <br />
-        <span
-          >The longevity sector is on track to be a multi trillion dollar
-          industry. World’s leaders are heavily investing in longevity
-          tools.</span
-        >
-      </p>
-      <div class="hills__coord--wrapper">
-        <svg width="30" height="30" class="hills__coord--icon">
-          <use href="./icons/sprite.svg#location"></use>
-        </svg>
-        <span class="hills__coord--text">20.2536° N / 69.3321° W</span>
+    <div class="hills__text--wrapper">
+      <!-- Slider Navigation -->
+      <div class="hills__slider--nav-wrapper">
+        <div class="hills__slider--nav-btns">
+          <button class="hills__slider--prev">
+            <svg class="hills__slider--nav-icon" viewBox="0 0 140 11">
+              <path d="M11 5h129v1H11zM0 5.5 9 0v11L0 5.5Z" />
+            </svg>
+          </button>
+          <button class="hills__slider--next">
+            <svg class="hills__slider--nav-icon" viewBox="0 0 140 11">
+              <path d="M0 5h129v1H0zM140 5.5 131 0v11l9-5.5Z" />
+            </svg>
+          </button>
+        </div>
+        <p>Location</p>
+        <ul class="hills__slider--nav-list">
+          <li class="hills__slider--nav-item">
+            <p>New York</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>Virginia</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>Greece</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>Dominican Republic</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>New Zealand</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>Iceland</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>Vietnam</p>
+          </li>
+          <li class="hills__slider--nav-item">
+            <p>Philippines</p>
+          </li>
+        </ul>
       </div>
-    </article>
+
+      <!-- Test Content -->
+      <article class="hills__descr">
+        <h2 class="hills__title">Damac Hills</h2>
+        <p class="hills__text">
+          We are forming a New Earth community delivering solutions that
+          optimize activity, longevity, and wellness in unforgettable locations
+          around the world. <br />
+          <span
+            >The longevity sector is on track to be a multi trillion dollar
+            industry. World’s leaders are heavily investing in longevity
+            tools.</span
+          >
+        </p>
+        <div class="hills__coord--wrapper">
+          <svg width="30" height="30" class="hills__coord--icon">
+            <use href="./icons/sprite.svg#location"></use>
+          </svg>
+          <span class="hills__coord--text">20.2536° N / 69.3321° W</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Slider -->
+    <ul class="journey__slider--container">
+      <li class="journey__slide">
+        <picture class="journey__slide--img">
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide1@0.75x.webp 1x,
+              ./images/journey/slide1@1.5x.webp  2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide1@0.75x.png 1x,
+              ./images/journey/slide1@1.5x.png  2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide1@1x.webp   1x,
+              ./images/journey/slide1@1.5x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide1@1x.png   1x,
+              ./images/journey/slide1@1.5x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide1@1.5x.webp 1x,
+              ./images/journey/slide1@2x.webp   2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide1@1.5x.png 1x,
+              ./images/journey/slide1@2x.png   2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/journey/slide1@1x.png"
+            alt="green"
+            width="640"
+            height="640"
+          />
+        </picture>
+      </li>
+      <li class="journey__slide active-img">
+        <picture class="journey__slide--img">
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide2@0.75x.webp 1x,
+              ./images/journey/slide2@1.5x.webp  2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide2@0.75x.png 1x,
+              ./images/journey/slide2@1.5x.png  2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide2@1x.webp   1x,
+              ./images/journey/slide2@1.5x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide2@1x.png   1x,
+              ./images/journey/slide2@1.5x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide2@1.5x.webp 1x,
+              ./images/journey/slide2@2x.webp   2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide2@1.5x.png 1x,
+              ./images/journey/slide2@2x.png   2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/journey/slide2@1x.png"
+            alt="green"
+            width="640"
+            height="640"
+          />
+        </picture>
+      </li>
+      <li class="journey__slide">
+        <picture class="journey__slide--img">
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide3@0.75x.webp 1x,
+              ./images/journey/slide3@1.5x.webp  2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide3@0.75x.png 1x,
+              ./images/journey/slide3@1.5x.png  2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide3@1x.webp   1x,
+              ./images/journey/slide3@1.5x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide3@1x.png   1x,
+              ./images/journey/slide3@1.5x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide3@1.5x.webp 1x,
+              ./images/journey/slide3@2x.webp   2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide3@1.5x.png 1x,
+              ./images/journey/slide3@2x.png   2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/journey/slide3@1x.png"
+            alt="green"
+            width="640"
+            height="640"
+          />
+        </picture>
+      </li>
+      <li class="journey__slide">
+        <picture class="journey__slide--img">
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide4@0.75x.webp 1x,
+              ./images/journey/slide4@1.5x.webp  2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide4@0.75x.png 1x,
+              ./images/journey/slide4@1.5x.png  2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide4@1x.webp   1x,
+              ./images/journey/slide4@1.5x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide4@1x.png   1x,
+              ./images/journey/slide4@1.5x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide4@1.5x.webp 1x,
+              ./images/journey/slide4@2x.webp   2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide4@1.5x.png 1x,
+              ./images/journey/slide4@2x.png   2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/journey/slide4@1x.png"
+            alt="green"
+            width="640"
+            height="640"
+          />
+        </picture>
+      </li>
+      <li class="journey__slide">
+        <picture class="journey__slide--img">
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide5@0.75x.webp 1x,
+              ./images/journey/slide5@1.5x.webp  2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide5@0.75x.png 1x,
+              ./images/journey/slide5@1.5x.png  2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide5@1x.webp   1x,
+              ./images/journey/slide5@1.5x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide5@1x.png   1x,
+              ./images/journey/slide5@1.5x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide5@1.5x.webp 1x,
+              ./images/journey/slide5@2x.webp   2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide5@1.5x.png 1x,
+              ./images/journey/slide5@2x.png   2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/journey/slide5@1x.png"
+            alt="green"
+            width="640"
+            height="640"
+          />
+        </picture>
+      </li>
+      <li class="journey__slide">
+        <picture class="journey__slide--img">
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide6@0.75x.webp 1x,
+              ./images/journey/slide6@1.5x.webp  2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide6@0.75x.png 1x,
+              ./images/journey/slide6@1.5x.png  2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide6@1x.webp   1x,
+              ./images/journey/slide6@1.5x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide6@1x.png   1x,
+              ./images/journey/slide6@1.5x.png 2x
+            "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/journey/slide6@1.5x.webp 1x,
+              ./images/journey/slide6@2x.webp   2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+              ./images/journey/slide6@1.5x.png 1x,
+              ./images/journey/slide6@2x.png   2x
+            "
+            type="image/png"
+          />
+          <img
+            src="./images/journey/slide6@1x.png"
+            alt="green"
+            width="640"
+            height="640"
+          />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
