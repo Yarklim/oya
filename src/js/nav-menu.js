@@ -8,7 +8,17 @@ let selectedTag = null;
 openMenuEl.addEventListener('click', openMenu);
 closeMenuEl.addEventListener('click', closeMenu);
 
-navLinksEl.addEventListener('click', e => {
+navLinksEl.addEventListener('click', onActiveLinkAndClose);
+
+function openMenu() {
+  navMenuEl.classList.add('open-menu');
+}
+
+function closeMenu() {
+  navMenuEl.classList.remove('open-menu');
+}
+
+function onActiveLinkAndClose(e) {
   const currentActiveBtn = document.querySelector('.active__nav-link');
 
   if (currentActiveBtn) {
@@ -18,12 +28,6 @@ navLinksEl.addEventListener('click', e => {
   const nextActiveBtn = e.target;
   nextActiveBtn.classList.add('active__nav-link');
   selectedTag = nextActiveBtn.dataset.value;
-});
 
-function openMenu() {
-  navMenuEl.classList.add('open-menu');
-}
-
-function closeMenu() {
-  navMenuEl.classList.remove('open-menu');
+  closeMenu();
 }
