@@ -423,6 +423,9 @@ body {
   font-weight: 400;
   color: var(--light-color);
 }
+.nav-menu__nav-link:hover, .nav-menu__nav-link:focus-visible {
+  color: var(--light-gray-color);
+}
 
 .nav-menu__links {
   margin-top: 40px;
@@ -471,6 +474,15 @@ body {
   font-weight: 500;
   line-height: 1.4;
   color: var(--opacity-light-color);
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.nav-menu__contacts--link:hover, .nav-menu__contacts--link:focus-visible,
+.nav-menu__socials--link:hover,
+.nav-menu__socials--link:focus-visible,
+.nav-menu__whitepaper:hover,
+.nav-menu__whitepaper:focus-visible {
+  color: var(--light-gray-color);
 }
 
 .nav-menu__whitepaper {

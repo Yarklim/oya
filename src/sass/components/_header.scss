@@ -119,6 +119,11 @@
     font-weight: 400;
     color: var(--light-color);
   }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--light-gray-color);
+  }
 }
 
 .nav-menu__links {
@@ -152,6 +157,13 @@
   font-weight: 500;
   line-height: 1.4;
   color: var(--opacity-light-color);
+
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--light-gray-color);
+  }
 }
 
 .nav-menu__whitepaper {
