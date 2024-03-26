@@ -11,11 +11,12 @@
 // =========== Navigation Menu =============
 
 .header__nav-menu {
-  //   display: none;
+  display: none;
 
   width: 100%;
 
-  padding: 25px 20px; // 20 -
+  padding: clamp(1.375rem, 1.15rem + 1.13vw, 2.5rem)
+    clamp(0.938rem, -0.75rem + 8.44vw, 9.375rem);
 
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 0;
 
   background-size: cover;
   background-position: center;
@@ -31,9 +32,9 @@
 
   overflow: hidden;
 
-  opacity: 1;
+  opacity: 0;
 
-  transition: opacity 0.3s ease;
+  transition: all 0.5s ease;
 
   //   ----- Mobile screen ----
   background-image: var(--gray-gradient),
@@ -69,15 +70,33 @@
         url('../src/images/backgrounds/hero_bg@desk2x.webp');
     }
   }
+
+  &.open-menu {
+    display: block;
+
+    z-index: 100;
+
+    opacity: 1;
+  }
+}
+
+.nav-menu__top {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__nav-menu--heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  fill: var(--light-color);
-  stroke: var(--light-color);
+.nav-menu__logo {
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+  }
 }
 
 .nav-menu__nav--list {
@@ -85,18 +104,19 @@
 
   display: flex;
   flex-direction: column;
-  gap: 20px 0; // 20 -
+  gap: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem) 0; // 20 - 30
 }
 
 .nav-menu__nav-link {
   font-family: var(--font-serif);
-  font-size: 30px; // 40 -
+  font-size: clamp(1.875rem, 1.375rem + 2.5vw, 4.375rem); // 30 - 70
   font-weight: 300;
   color: var(--opacity-light-color);
 
   transition: color 0.3s ease;
 
   &.active__nav-link {
+    font-weight: 400;
     color: var(--light-color);
   }
 }
@@ -106,6 +126,10 @@
 
   display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    gap: 0 100px;
+  }
 }
 
 .nav-menu__contacts {
@@ -124,7 +148,7 @@
 .nav-menu__contacts--link,
 .nav-menu__socials--link,
 .nav-menu__whitepaper {
-  font-size: 15px;
+  font-size: clamp(0.938rem, 0.875rem + 0.31vw, 1.25rem); // 15 - 20
   font-weight: 500;
   line-height: 1.4;
   color: var(--opacity-light-color);
@@ -136,7 +160,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 12px; // 12 -
+  gap: 0 12px;
 }
 
 .nav-menu__whitepaper--icon {
@@ -146,8 +170,8 @@
 .nav-menu__footer {
   width: 100%;
 
-  margin-top: 30px; // 30 -
-  padding: 15px 0; // 15
+  margin-top: 30px;
+  padding: 15px 0;
 
   display: flex;
   justify-content: space-between;
@@ -199,17 +223,11 @@
 }
 
 .menu__icon {
-  display: none;
-
   width: 24px;
   height: 24px;
 
   fill: inherit;
   stroke: inherit;
-
-  &.menu-active {
-    display: block;
-  }
 }
 
 .menu__btn-text {

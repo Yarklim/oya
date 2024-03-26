@@ -2,119 +2,157 @@
   <!---------------------------- Navigation Menu ------------------------------>
   <div class="header__nav-menu">
     <div class="header__nav-menu--heading">
-      <svg width="20" height="20" class="header__nav-menu--close">
-        <use href="./icons/sprite.svg#menu-close"></use>
-      </svg>
-      <svg width="80" height="37" class="header__nav-menu--logo">
-        <use href="./icons/sprite.svg#logo"></use>
-      </svg>
-      <svg width="30" height="30" class="header__nav-menu--wallet">
-        <use href="./icons/sprite.svg#wallet"></use>
-      </svg>
+      <button class="menu__btn js-menu__close">
+        <svg width="20" height="20" class="menu__icon">
+          <use href="./icons/sprite.svg#menu-close"></use>
+        </svg>
+      </button>
+
+      <div class="header__logo--wrapper nav-menu__logo">
+        <svg width="120" height="39" class="header__logo">
+          <use href="./icons/sprite.svg#logo"></use>
+        </svg>
+        <span class="header__logo--text">connect heal live</span>
+      </div>
+
+      <button
+        class="header__wallet--btn js-open-modal"
+        aria-label="Connect Wallet"
+      >
+        <span class="header__wallet--text">Connect Wallet</span>
+        <svg width="30" height="30" class="header__wallet--icon">
+          <use href="./icons/sprite.svg#wallet"></use>
+        </svg>
+      </button>
     </div>
-    <nav class="nav-menu__nav">
-      <ul class="nav-menu__nav--list">
-        <li class="nav-menu__nav--item">
-          <a
-            href="#"
-            class="nav-menu__nav-link active__nav-link"
-            aria-label="to Home"
-            >Home</a
-          >
-        </li>
 
-        <li class="nav-menu__nav-item">
-          <a href="#" class="nav-menu__nav-link" aria-label="to About Section"
-            >About OYA</a
-          >
-        </li>
-
-        <li class="nav-menu__nav-item">
-          <a href="#" class="nav-menu__nav-link" aria-label="to Journey Section"
-            >Your Journey</a
-          >
-        </li>
-
-        <li class="nav-menu__nav-item">
-          <a href="#" class="nav-menu__nav-link" aria-label="to Roadmap Section"
-            >Roadmap</a
-          >
-        </li>
-
-        <li class="nav-menu__nav-item">
-          <a
-            href="#"
-            class="nav-menu__nav-link"
-            aria-label="to Mint NFT Section"
-            >Mint NFT</a
-          >
-        </li>
-
-        <li class="nav-menu__nav-item">
-          <a href="#" class="nav-menu__nav-link" aria-label="to Gallery Section"
-            >Gallery</a
-          >
-        </li>
-
-        <li class="nav-menu__nav-item">
-          <a href="#" class="nav-menu__nav-link" aria-label="to News Section"
-            >News</a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <div class="nav-menu__links">
-      <div class="nav-menu__contacts">
-        <ul class="nav-menu__contacts--list">
-          <li class="nav-menu__contacts--item">
+    <div class="nav-menu__top">
+      <nav class="nav-menu__nav">
+        <ul class="nav-menu__nav--list">
+          <li class="nav-menu__nav--item">
             <a
               href="#"
-              class="nav-menu__contacts--link"
-              aria-label="to contacts"
-              >contacts</a
+              class="nav-menu__nav-link active__nav-link"
+              data-value="home"
+              aria-label="to Home"
+              >Home</a
             >
           </li>
-          <li class="nav-menu__contacts--item">
+
+          <li class="nav-menu__nav-item">
             <a
               href="#"
-              class="nav-menu__contacts--link"
-              aria-label="send e-mail"
-              >oya@oyanewearth.com</a
+              class="nav-menu__nav-link"
+              data-value="about"
+              aria-label="to About Section"
+              >About OYA</a
+            >
+          </li>
+
+          <li class="nav-menu__nav-item">
+            <a
+              href="#"
+              class="nav-menu__nav-link"
+              data-value="journey"
+              aria-label="to Journey Section"
+              >Your Journey</a
+            >
+          </li>
+
+          <li class="nav-menu__nav-item">
+            <a
+              href="#"
+              class="nav-menu__nav-link"
+              data-value="roadmap"
+              aria-label="to Roadmap Section"
+              >Roadmap</a
+            >
+          </li>
+
+          <li class="nav-menu__nav-item">
+            <a
+              href="#"
+              class="nav-menu__nav-link"
+              data-value="nft"
+              aria-label="to Mint NFT Section"
+              >Mint NFT</a
+            >
+          </li>
+
+          <li class="nav-menu__nav-item">
+            <a
+              href="#"
+              class="nav-menu__nav-link"
+              data-value="gallery"
+              aria-label="to Gallery Section"
+              >Gallery</a
+            >
+          </li>
+
+          <li class="nav-menu__nav-item">
+            <a
+              href="#"
+              class="nav-menu__nav-link"
+              data-value="news"
+              aria-label="to News Section"
+              >News</a
             >
           </li>
         </ul>
-        <button class="nav-menu__whitepaper" aria-label="open whitepaper">
-          <svg width="24" height="24" class="nav-menu__whitepaper--icon">
-            <use href="./icons/sprite.svg#paper"></use>
-          </svg>
-          <p class="nav-menu__whitepaper--text">whitepaper</p>
-        </button>
-      </div>
+      </nav>
 
-      <!------------------------ Navigation Socials -------------------->
-      <ul class="nav-menu__socials--list">
-        <li class="nav-menu__socials--item">
-          <a href="" class="nav-menu__socials--link" aria-label="to Discord"
-            >Discord</a
-          >
-        </li>
-        <li class="nav-menu__socials--item">
-          <a href="" class="nav-menu__socials--link" aria-label="to Twitter"
-            >Twitter</a
-          >
-        </li>
-        <li class="nav-menu__socials--item">
-          <a href="" class="nav-menu__socials--link" aria-label="to Instagram"
-            >Instagram</a
-          >
-        </li>
-        <li class="nav-menu__socials--item">
-          <a href="" class="nav-menu__socials--link" aria-label="to Telegram"
-            >Telegram</a
-          >
-        </li>
-      </ul>
+      <div class="nav-menu__links">
+        <div class="nav-menu__contacts">
+          <ul class="nav-menu__contacts--list">
+            <li class="nav-menu__contacts--item">
+              <a
+                href="#"
+                class="nav-menu__contacts--link"
+                aria-label="to contacts"
+                >contacts</a
+              >
+            </li>
+            <li class="nav-menu__contacts--item">
+              <a
+                href="#"
+                class="nav-menu__contacts--link"
+                aria-label="send e-mail"
+                >oya@oyanewearth.com</a
+              >
+            </li>
+          </ul>
+          <button class="nav-menu__whitepaper" aria-label="open whitepaper">
+            <svg width="24" height="24" class="nav-menu__whitepaper--icon">
+              <use href="./icons/sprite.svg#paper"></use>
+            </svg>
+            <p class="nav-menu__whitepaper--text">whitepaper</p>
+          </button>
+        </div>
+
+        <!------------------------ Navigation Socials -------------------->
+        <ul class="nav-menu__socials--list">
+          <li class="nav-menu__socials--item">
+            <a href="" class="nav-menu__socials--link" aria-label="to Discord"
+              >Discord</a
+            >
+          </li>
+          <li class="nav-menu__socials--item">
+            <a href="" class="nav-menu__socials--link" aria-label="to Twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="nav-menu__socials--item">
+            <a href="" class="nav-menu__socials--link" aria-label="to Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="nav-menu__socials--item">
+            <a href="" class="nav-menu__socials--link" aria-label="to Telegram"
+              >Telegram</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="nav-menu__footer">
@@ -126,12 +164,8 @@
   <!------------------------------ Header Menu ------------------------------->
   <div class="header__wrapper">
     <div class="header__menu">
-      <button class="menu__btn js-btn-menu" aria-label="open mobile menu">
-        <svg
-          width="24"
-          height="24"
-          class="menu__icon js-btn-icon-open menu-active"
-        >
+      <button class="menu__btn js-menu__open" aria-label="open mobile menu">
+        <svg width="24" height="24" class="menu__icon js-btn-icon-open">
           <use href="./icons/sprite.svg#menu"></use>
         </svg>
         <span class="menu__btn-text">Menu</span>
