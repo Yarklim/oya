@@ -1,3 +1,7 @@
+.pillars {
+  overflow: hidden;
+}
+
 .pillars__wrapper {
   width: 100%;
 }
@@ -101,4 +105,107 @@
   @media screen and (min-width: 768px) {
     font-size: 16px; //
   }
+}
+
+// ============== Navigation =============
+
+.pillars__slider--nav-btns {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    margin-top: clamp(1.875rem, 1.042rem + 1.74vw, 3.125rem); // 30 - 50
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0 clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
+  }
+}
+
+.pillars__slider--prev,
+.pillars__slider--next {
+  width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem); // 70 - 180
+  padding: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem) 0; // 10 - 20
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem); // 70 - 180
+    padding: clamp(0.313rem, -0.313rem + 1.3vw, 1.25rem) 0; // 5 - 20
+  }
+}
+
+.pillars__slider--nav-icon {
+  width: clamp(3.125rem, 2rem + 5.63vw, 8.75rem); // 50 - 140
+
+  fill: var(--dark-gray-color);
+
+  @media screen and (min-width: 768px) {
+    width: clamp(3.75rem, 1.25rem + 5.21vw, 7.5rem); // 60 - 120
+  }
+}
+
+// ================ Slider ================
+.pillars__slider--container {
+  width: calc(100% * 4);
+
+  margin-top: 40px;
+
+  display: inline-flex;
+  gap: 0 clamp(0.938rem, 0.375rem + 2.81vw, 3.75rem); // 15 - 60
+
+  scrollbar-width: none;
+  overflow: hidden;
+
+  will-change: transform;
+
+  transition: transform 0.3s ease-out;
+
+  cursor: grab;
+
+  @media screen and (min-width: 768px) {
+    margin-top: clamp(2.5rem, 0.833rem + 3.47vw, 5rem); // 40 - 80
+  }
+}
+
+.pillars__slide {
+  width: clamp(16.25rem, 13.571rem + 13.39vw, 20rem); // 260 - 320
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: clamp(20rem, 0.833rem + 39.93vw, 48.75rem); // 320 - 780
+  }
+}
+
+.pillars__slide--img {
+  user-select: none;
+}
+
+.grabbing {
+  cursor: grabbing;
+
+  & .pillars__slide--img {
+    transform: scale(0.9);
+  }
+}
+
+.pillars__slide--text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  padding: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem); // 10 - 20
+
+  font-size: clamp(0.75rem, 0.675rem + 0.38vw, 1.125rem); // 12 - 18
+  font-weight: 500;
+  line-height: 1.4;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
 }
