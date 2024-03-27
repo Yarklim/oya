@@ -1,0 +1,117 @@
+// ============ Buttons ===========
+.scroll__menu--btn {
+  width: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem); // 25 - 40
+  height: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem); // 25 - 40
+
+  padding: 20px;
+
+  position: fixed;
+  bottom: clamp(1.875rem, 1rem + 4.38vw, 6.25rem); // 30 - 100
+  right: clamp(1.25rem, 0.625rem + 3.13vw, 4.375rem); // 20 - 70
+
+  z-index: 200;
+
+  border-radius: 50%;
+  background-color: var(--gray-dark-bg);
+
+  fill: var(--opacity-light-color);
+  stroke: var(--opacity-light-color);
+
+  opacity: 0.5;
+
+  transition: all 0.3s ease;
+
+  & .scroll__menu--close {
+    opacity: 0;
+  }
+
+  &.active .scroll__menu--open {
+    opacity: 0;
+  }
+  &.active .scroll__menu--close {
+    opacity: 1;
+  }
+
+  & .scroll__menu--open,
+  & .scroll__menu--close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover,
+  &:focus-visible {
+    fill: var(--light-color);
+    stroke: var(--light-color);
+  }
+}
+
+// =========== Nav Links ==========
+.scroll__menu-list--wrapper {
+  width: clamp(19.375rem, 13.25rem + 30.63vw, 50rem); // 310 - 800
+  height: clamp(20.375rem, 15.075rem + 26.5vw, 46.875rem); // 326 - 750
+
+  padding: clamp(2.5rem, 2rem + 2.5vw, 5rem); // 40 - 80
+
+  position: fixed;
+  bottom: 0;
+  right: -100%; // 0 - -100%
+
+  z-index: 100;
+
+  border-top-left-radius: 10px;
+  background-color: var(--gray-dark-bg);
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+
+  &.active {
+    right: 0;
+  }
+}
+
+.scroll__menu--list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 1rem + 1.25vw, 2.5rem) 0; // 20 - 40
+
+  position: absolute;
+
+  z-index: 10;
+}
+
+.scroll__menu-link {
+  font-family: var(--font-serif);
+  font-size: clamp(1.125rem, 0.725rem + 2vw, 3.125rem); // 18 - 50
+  font-weight: 300;
+  color: var(--opacity-light-color);
+
+  transition: color 0.3s ease;
+
+  &.active__nav-link {
+    font-weight: 400;
+    color: var(--light-color);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--light-gray-color);
+  }
+  &:hover.active__nav-link,
+  &:focus-visible.active__nav-link {
+    color: var(--light-color);
+  }
+}
+
+// ========== Decor Background ============
+.scroll__menu--decor {
+  width: 100%;
+
+  position: absolute;
+  bottom: calc(clamp(1.875rem, -0.5rem + 11.88vw, 13.75rem) * -1); // 220 - 30
+  left: 0;
+
+  z-index: 1;
+}
