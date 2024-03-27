@@ -693,6 +693,15 @@ body {
   }
 }
 
+.scroll__menu {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.scroll__menu.active {
+  opacity: 1;
+}
+
 .scroll__menu--btn {
   width: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);
   height: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem);

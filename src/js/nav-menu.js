@@ -3,6 +3,7 @@ const openMenuEl = document.querySelector('.js-menu__open');
 const closeMenuEl = document.querySelector('.js-menu__close');
 const navLinksEl = document.querySelector('.nav-menu__nav--list');
 
+const scrollMenuEl = document.querySelector('.scroll__menu');
 const scrollMenuBtnEl = document.querySelector('.scroll__menu--btn');
 const scrollMenuContainerEl = document.querySelector(
   '.scroll__menu-list--wrapper'
@@ -17,6 +18,14 @@ closeMenuEl.addEventListener('click', closeMenu);
 navLinksEl.addEventListener('click', onActiveLinkAndClose);
 
 // ========= Scroll Menu ============
+window.addEventListener('scroll', () => {
+  if (Math.round(window.scrollY) > 300) {
+    scrollMenuEl.classList.add('active');
+  } else {
+    scrollMenuEl.classList.remove('active');
+  }
+});
+
 scrollMenuBtnEl.addEventListener('click', toggleScrollBtnMenu);
 scrollLinksEl.forEach(el => el.addEventListener('click', toggleScrollBtnMenu));
 

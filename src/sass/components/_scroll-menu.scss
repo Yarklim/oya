@@ -1,3 +1,13 @@
+.scroll__menu {
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
 // ============ Buttons ===========
 .scroll__menu--btn {
   width: clamp(1.563rem, 1.125rem + 2.19vw, 3.75rem); // 25 - 40
