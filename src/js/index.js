@@ -1,3 +1,4 @@
+import './observer';
 import './nav-menu';
 import './international';
 import './collection';

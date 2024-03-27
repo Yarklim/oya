@@ -707,8 +707,8 @@ body {
   height: clamp(1.563rem, 0.625rem + 4.69vw, 6.25rem);
   padding: 20px;
   position: fixed;
-  bottom: clamp(1.875rem, 1rem + 4.38vw, 6.25rem);
-  right: clamp(1.25rem, 0.625rem + 3.13vw, 4.375rem);
+  bottom: 30px;
+  right: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem);
   z-index: 200;
   border-radius: 50%;
   background-color: var(--gray-dark-bg);
@@ -741,7 +741,7 @@ body {
 
 .scroll__menu-list--wrapper {
   width: clamp(19.375rem, 13.25rem + 30.63vw, 50rem);
-  height: clamp(20.375rem, 15.075rem + 26.5vw, 46.875rem);
+  height: clamp(20rem, 14.625rem + 26.88vw, 46.875rem);
   padding: clamp(2.5rem, 2rem + 2.5vw, 5rem);
   position: fixed;
   bottom: 0;

@@ -3,7 +3,7 @@ const openMenuEl = document.querySelector('.js-menu__open');
 const closeMenuEl = document.querySelector('.js-menu__close');
 const navLinksEl = document.querySelector('.nav-menu__nav--list');
 
-const scrollMenuEl = document.querySelector('.scroll__menu');
+export const scrollMenuEl = document.querySelector('.scroll__menu');
 const scrollMenuBtnEl = document.querySelector('.scroll__menu--btn');
 const scrollMenuContainerEl = document.querySelector(
   '.scroll__menu-list--wrapper'
@@ -19,7 +19,13 @@ navLinksEl.addEventListener('click', onActiveLinkAndClose);
 
 // ========= Scroll Menu ============
 window.addEventListener('scroll', () => {
-  if (Math.round(window.scrollY) > 300) {
+  let bodyHeight = document.body.scrollHeight;
+  let pointOfHideMenu = bodyHeight - bodyHeight * 0.06;
+
+  if (
+    Math.round(window.scrollY) > 300 &&
+    Math.round(window.scrollY) < pointOfHideMenu
+  ) {
     scrollMenuEl.classList.add('active');
   } else {
     scrollMenuEl.classList.remove('active');

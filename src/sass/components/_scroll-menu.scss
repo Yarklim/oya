@@ -16,8 +16,8 @@
   padding: 20px;
 
   position: fixed;
-  bottom: clamp(1.875rem, 1rem + 4.38vw, 6.25rem); // 30 - 100
-  right: clamp(1.25rem, 0.625rem + 3.13vw, 4.375rem); // 20 - 70
+  bottom: 30px;
+  right: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem); // 20 - 30
 
   z-index: 200;
 
@@ -60,7 +60,7 @@
 // =========== Nav Links ==========
 .scroll__menu-list--wrapper {
   width: clamp(19.375rem, 13.25rem + 30.63vw, 50rem); // 310 - 800
-  height: clamp(20.375rem, 15.075rem + 26.5vw, 46.875rem); // 326 - 750
+  height: clamp(20rem, 14.625rem + 26.88vw, 46.875rem); // 320 - 750
 
   padding: clamp(2.5rem, 2rem + 2.5vw, 5rem); // 40 - 80
 
