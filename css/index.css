@@ -728,6 +728,7 @@ body {
   -webkit-box-shadow: 2px 4px 4px rgba(2, 10, 5, 0.12), 1px 3px 3px rgba(1, 12, 7, 0.14), 1px 2px 1px rgba(2, 7, 3, 0.2);
           box-shadow: 2px 4px 4px rgba(2, 10, 5, 0.12), 1px 3px 3px rgba(1, 12, 7, 0.14), 1px 2px 1px rgba(2, 7, 3, 0.2);
   border-radius: 10px;
+  overflow: hidden;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -740,6 +741,7 @@ body {
   position: absolute;
   top: clamp(0.938rem, 0.75rem + 0.94vw, 1.875rem);
   right: clamp(0.938rem, 0.75rem + 0.94vw, 1.875rem);
+  z-index: 5;
   background: transparent;
   cursor: pointer;
 }
@@ -785,6 +787,15 @@ body {
   font-size: clamp(1.125rem, 0.725rem + 2vw, 3.125rem);
   font-weight: 300;
   color: var(--opacity-light-color);
+}
+
+.scroll__menu--decor {
+  width: clamp(18.75rem, 12.5rem + 31.25vw, 50rem);
+  height: clamp(18.75rem, 12.5rem + 31.25vw, 50rem);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .scroll__menu {
@@ -884,10 +895,14 @@ body {
 }
 
 .scroll__menu--decor {
-  width: 100%;
+  width: clamp(18.75rem, 13.125rem + 28.13vw, 46.875rem);
+  height: clamp(18.75rem, 13.125rem + 28.13vw, 46.875rem);
   position: absolute;
-  bottom: calc(clamp(1.875rem, -0.5rem + 11.88vw, 13.75rem) * -1);
+  top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
+  margin: auto;
   z-index: 1;
 }
 
@@ -1593,8 +1608,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  -webkit-animation: fade 12s linear infinite;
-          animation: fade 12s linear infinite;
+  -webkit-animation: fade 10s linear infinite;
+          animation: fade 10s linear infinite;
   will-change: opacity;
 }
 
@@ -1603,8 +1618,8 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  -webkit-animation: fade2 12s linear infinite;
-          animation: fade2 12s linear infinite;
+  -webkit-animation: fade2 10s linear infinite;
+          animation: fade2 10s linear infinite;
   will-change: opacity;
 }
 
@@ -3911,6 +3926,18 @@ body {
   gap: 10px 0;
   background-color: var(--light-bg);
 }
+.carousel.animated .carousel__content {
+  -webkit-animation: animate1 var(--t) linear infinite;
+          animation: animate1 var(--t) linear infinite;
+  -webkit-animation-delay: calc(var(--t) * -1);
+          animation-delay: calc(var(--t) * -1);
+}
+.carousel.animated .carousel__content:nth-child(2) {
+  -webkit-animation: animate2 var(--t) linear infinite;
+          animation: animate2 var(--t) linear infinite;
+  -webkit-animation-delay: calc(var(--t) / -2);
+          animation-delay: calc(var(--t) / -2);
+}
 
 .carousel__scroll {
   width: 100%;
@@ -3919,18 +3946,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-}
-.carousel__scroll .carousel__content {
-  -webkit-animation: animate1 var(--t) linear infinite;
-          animation: animate1 var(--t) linear infinite;
-  -webkit-animation-delay: calc(var(--t) * -1);
-          animation-delay: calc(var(--t) * -1);
-}
-.carousel__scroll .carousel__content:nth-child(2) {
-  -webkit-animation: animate2 var(--t) linear infinite;
-          animation: animate2 var(--t) linear infinite;
-  -webkit-animation-delay: calc(var(--t) / -2);
-          animation-delay: calc(var(--t) / -2);
 }
 
 @-webkit-keyframes animate1 {

@@ -3,6 +3,7 @@ import { collectionMosaiс } from './collection';
 
 window.onload = () => {
   const circlesBG = document.querySelectorAll('.bg-circles');
+  const carouselEl = document.querySelector('.carousel');
 
   const options = {
     root: null,
@@ -35,7 +36,7 @@ window.onload = () => {
 
         //   ------------ Collection Animated ------------
         if (entryData === 'collection') {
-          //   collectionMosaiс();
+          carouselEl.classList.add('animated');
         }
       }
     });

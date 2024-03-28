@@ -37,6 +37,8 @@
     1px 2px 1px rgba(2, 7, 3, 0.2);
   border-radius: 10px;
 
+  overflow: hidden;
+
   transform: translate(-50%, -50%) scale(1);
 
   transition: transform 0.3s ease-in-out;
@@ -46,6 +48,7 @@
   position: absolute;
   top: clamp(0.938rem, 0.75rem + 0.94vw, 1.875rem); // 15 - 30
   right: clamp(0.938rem, 0.75rem + 0.94vw, 1.875rem); // 15 - 30
+  z-index: 5;
 
   background: transparent;
 
@@ -88,4 +91,16 @@
   font-size: clamp(1.125rem, 0.725rem + 2vw, 3.125rem); // 18 - 50
   font-weight: 300;
   color: var(--opacity-light-color);
+}
+
+// ========== Decor Background ============
+.scroll__menu--decor {
+  width: clamp(18.75rem, 12.5rem + 31.25vw, 50rem); // 300 - 800
+  height: clamp(18.75rem, 12.5rem + 31.25vw, 50rem); // 300 - 800
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  z-index: 1;
 }

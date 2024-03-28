@@ -117,11 +117,16 @@
 
 // ========== Decor Background ============
 .scroll__menu--decor {
-  width: 100%;
+  width: clamp(18.75rem, 13.125rem + 28.13vw, 46.875rem); // 300 - 750
+  height: clamp(18.75rem, 13.125rem + 28.13vw, 46.875rem); // 300 - 750
 
   position: absolute;
-  bottom: calc(clamp(1.875rem, -0.5rem + 11.88vw, 13.75rem) * -1); // 220 - 30
+  top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
+
+  margin: auto;
 
   z-index: 1;
 }
