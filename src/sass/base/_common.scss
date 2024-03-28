@@ -54,7 +54,7 @@ body {
 
   opacity: 0.6;
 
-  & path {
+  &.circles-animation path {
     stroke-dasharray: 6000;
 
     animation: draw 3s linear forwards;

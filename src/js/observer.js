@@ -1,6 +1,9 @@
 import { scrollLinksEl } from './nav-menu.js';
+import { collectionMosaiс } from './collection';
 
 window.onload = () => {
+  const circlesBG = document.querySelectorAll('.bg-circles');
+
   const options = {
     root: null,
     riitMargin: '0px',
@@ -9,7 +12,10 @@ window.onload = () => {
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
+      const entryData = entry.target.getAttribute('data-section');
+
       if (entry.isIntersecting) {
+        //   --------- Change Scroll Menu Links colors ----------
         scrollLinksEl.forEach(link => {
           const linkId = link.getAttribute('href').replace('#', '');
 
@@ -17,8 +23,19 @@ window.onload = () => {
             onChangeLinkColor(link);
           }
         });
-        if (entry.target.hasAttribute('data-footer')) {
-          //   scrollMenuEl.classList.remove('active');
+
+        //   --------- Animated Background Circles ---------
+        circlesBG.forEach(el => {
+          const elData = el.getAttribute('data-element');
+
+          if (entryData === elData) {
+            el.classList.add('circles-animation');
+          }
+        });
+
+        //   ------------ Collection Animated ------------
+        if (entryData === 'collection') {
+          //   collectionMosaiс();
         }
       }
     });

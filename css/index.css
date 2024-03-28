@@ -144,18 +144,18 @@ body {
   z-index: 1;
   opacity: 0.6;
 }
-.bg-circles path {
+.bg-circles.circles-animation path {
   stroke-dasharray: 6000;
   -webkit-animation: draw 3s linear forwards;
           animation: draw 3s linear forwards;
 }
-.bg-circles path:nth-child(1) {
+.bg-circles.circles-animation path:nth-child(1) {
   stroke-dashoffset: 10000;
 }
-.bg-circles path:nth-child(2) {
+.bg-circles.circles-animation path:nth-child(2) {
   stroke-dashoffset: 8000;
 }
-.bg-circles path:nth-child(3) {
+.bg-circles.circles-animation path:nth-child(3) {
   stroke-dashoffset: 6000;
 }
 
@@ -2034,6 +2034,37 @@ body {
   left: clamp(3.438rem, -1.625rem + 25.31vw, 28.75rem);
 }
 
+.bg-circles {
+  width: clamp(43.75rem, 35.1rem + 43.25vw, 87rem);
+  height: clamp(75rem, 73.088rem + 9.56vw, 84.563rem);
+  position: absolute;
+  top: -27%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0.6;
+}
+.bg-circles.circles-animation path {
+  stroke-dasharray: 6000;
+  -webkit-animation: draw 3s linear forwards;
+          animation: draw 3s linear forwards;
+}
+.bg-circles.circles-animation path:nth-child(1) {
+  stroke-dashoffset: 10000;
+}
+.bg-circles.circles-animation path:nth-child(2) {
+  stroke-dashoffset: 8000;
+}
+.bg-circles.circles-animation path:nth-child(3) {
+  stroke-dashoffset: 6000;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 .pillars {
   overflow: hidden;
 }
@@ -2305,6 +2336,8 @@ body {
 
 .collection {
   width: 100%;
+  position: relative;
+  overflow: hidden;
   background-color: var(--gray-dark-bg);
 }
 
