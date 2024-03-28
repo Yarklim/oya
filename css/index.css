@@ -4074,6 +4074,7 @@ body {
 }
 
 .partners__link {
+  display: block;
   width: clamp(7.5rem, 5.925rem + 7.88vw, 15.375rem);
   height: clamp(3.75rem, 3rem + 3.75vw, 7.5rem);
 }
