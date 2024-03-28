@@ -17,6 +17,7 @@
 
       <button
         class="header__wallet--btn js-open-modal"
+        data-modal-open
         aria-label="Connect Wallet"
       >
         <span class="header__wallet--text">Connect Wallet</span>
@@ -121,7 +122,11 @@
               >
             </li>
           </ul>
-          <button class="nav-menu__whitepaper" aria-label="open whitepaper">
+          <button
+            class="nav-menu__whitepaper"
+            data-modal-open
+            aria-label="open whitepaper"
+          >
             <svg width="24" height="24" class="nav-menu__whitepaper--icon">
               <use href="./icons/sprite.svg#paper"></use>
             </svg>
@@ -182,6 +187,7 @@
     <!--------------------------------- Wallet ------------------------------->
     <button
       class="header__wallet--btn js-open-modal"
+      data-modal-open
       aria-label="Connect Wallet"
     >
       <span class="header__wallet--text">Connect Wallet</span>
