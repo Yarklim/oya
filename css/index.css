@@ -468,7 +468,6 @@ body {
   gap: 18px 0;
 }
 
-.nav-menu__contacts--link,
 .nav-menu__socials--link,
 .nav-menu__whitepaper {
   font-size: clamp(0.938rem, 0.875rem + 0.31vw, 1.25rem);
@@ -478,12 +477,17 @@ body {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-.nav-menu__contacts--link:hover, .nav-menu__contacts--link:focus-visible,
-.nav-menu__socials--link:hover,
-.nav-menu__socials--link:focus-visible,
+.nav-menu__socials--link:hover, .nav-menu__socials--link:focus-visible,
 .nav-menu__whitepaper:hover,
 .nav-menu__whitepaper:focus-visible {
   color: var(--light-gray-color);
+}
+
+.nav-menu__contacts--link {
+  font-size: clamp(0.938rem, 0.875rem + 0.31vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--opacity-light-color);
 }
 
 .nav-menu__whitepaper {

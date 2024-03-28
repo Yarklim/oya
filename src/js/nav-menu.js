@@ -2,6 +2,7 @@ const navMenuEl = document.querySelector('.header__nav-menu');
 const openMenuEl = document.querySelector('.js-menu__open');
 const closeMenuEl = document.querySelector('.js-menu__close');
 const navLinksEl = document.querySelector('.nav-menu__nav--list');
+const modalOpenEl = document.querySelectorAll('[data-modal-open]');
 
 const scrollMenuEl = document.querySelector('.scroll__menu');
 const scrollMenuBtnEl = document.querySelector('.scroll__menu--btn');
@@ -16,6 +17,10 @@ openMenuEl.addEventListener('click', openMenu);
 closeMenuEl.addEventListener('click', closeMenu);
 
 navLinksEl.addEventListener('click', onActiveLinkAndClose);
+
+modalOpenEl.forEach(el => {
+  el.addEventListener('click', closeMenu);
+});
 
 // ========= Scroll Menu ============
 window.addEventListener('scroll', () => {

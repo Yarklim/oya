@@ -150,7 +150,6 @@
   gap: 18px 0; // 18 -
 }
 
-.nav-menu__contacts--link,
 .nav-menu__socials--link,
 .nav-menu__whitepaper {
   font-size: clamp(0.938rem, 0.875rem + 0.31vw, 1.25rem); // 15 - 20
@@ -164,6 +163,13 @@
   &:focus-visible {
     color: var(--light-gray-color);
   }
+}
+
+.nav-menu__contacts--link {
+  font-size: clamp(0.938rem, 0.875rem + 0.31vw, 1.25rem); // 15 - 20
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--opacity-light-color);
 }
 
 .nav-menu__whitepaper {
