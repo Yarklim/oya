@@ -3,12 +3,12 @@ const openMenuEl = document.querySelector('.js-menu__open');
 const closeMenuEl = document.querySelector('.js-menu__close');
 const navLinksEl = document.querySelector('.nav-menu__nav--list');
 
-export const scrollMenuEl = document.querySelector('.scroll__menu');
+const scrollMenuEl = document.querySelector('.scroll__menu');
 const scrollMenuBtnEl = document.querySelector('.scroll__menu--btn');
 const scrollMenuContainerEl = document.querySelector(
   '.scroll__menu-list--wrapper'
 );
-const scrollLinksEl = document.querySelectorAll('.scroll__menu-link');
+export const scrollLinksEl = document.querySelectorAll('.scroll__menu-link');
 
 let selectedTag = null;
 

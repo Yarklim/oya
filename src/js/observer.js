@@ -1,3 +1,5 @@
+import { scrollLinksEl } from './nav-menu.js';
+
 window.onload = () => {
   const options = {
     root: null,
@@ -8,6 +10,13 @@ window.onload = () => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        scrollLinksEl.forEach(link => {
+          const linkId = link.getAttribute('href').replace('#', '');
+
+          if (linkId === entry.target.id) {
+            onChangeLinkColor(link);
+          }
+        });
         if (entry.target.hasAttribute('data-footer')) {
           //   scrollMenuEl.classList.remove('active');
         }
