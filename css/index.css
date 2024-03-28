@@ -789,12 +789,30 @@ body {
   color: var(--opacity-light-color);
 }
 
-.scroll__menu--decor {
+.modal__bg--circles.circles-animation .modal__menu--decor path {
+  stroke-dasharray: 4000;
+  -webkit-animation: draw 3s linear forwards;
+          animation: draw 3s linear forwards;
+}
+.modal__bg--circles.circles-animation .modal__menu--decor path:nth-child(1) {
+  stroke-dashoffset: 8000;
+}
+.modal__bg--circles.circles-animation .modal__menu--decor path:nth-child(2) {
+  stroke-dashoffset: 6000;
+}
+.modal__bg--circles.circles-animation .modal__menu--decor path:nth-child(3) {
+  stroke-dashoffset: 4000;
+}
+
+.modal__menu--decor {
   width: clamp(18.75rem, 12.5rem + 31.25vw, 50rem);
   height: clamp(18.75rem, 12.5rem + 31.25vw, 50rem);
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 0;
+  right: 0;
+  margin: auto;
   z-index: 1;
 }
 
@@ -892,6 +910,21 @@ body {
 }
 .scroll__menu-link:hover.active__nav-link, .scroll__menu-link:focus-visible.active__nav-link {
   color: var(--light-color);
+}
+
+.scroll__bg--circles.circles-animation .scroll__menu--decor path {
+  stroke-dasharray: 4000;
+  -webkit-animation: draw 3s linear forwards;
+          animation: draw 3s linear forwards;
+}
+.scroll__bg--circles.circles-animation .scroll__menu--decor path:nth-child(1) {
+  stroke-dashoffset: 8000;
+}
+.scroll__bg--circles.circles-animation .scroll__menu--decor path:nth-child(2) {
+  stroke-dashoffset: 6000;
+}
+.scroll__bg--circles.circles-animation .scroll__menu--decor path:nth-child(3) {
+  stroke-dashoffset: 4000;
 }
 
 .scroll__menu--decor {

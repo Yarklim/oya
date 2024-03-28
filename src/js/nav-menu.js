@@ -9,6 +9,7 @@ const scrollMenuBtnEl = document.querySelector('.scroll__menu--btn');
 const scrollMenuContainerEl = document.querySelector(
   '.scroll__menu-list--wrapper'
 );
+const scrollMenuBgEl = document.querySelector('.scroll__bg--circles');
 export const scrollLinksEl = document.querySelectorAll('.scroll__menu-link');
 
 let selectedTag = null;
@@ -64,6 +65,7 @@ function onActiveLinkAndClose(e) {
 }
 
 function toggleScrollBtnMenu() {
+  scrollMenuBgEl.classList.toggle('circles-animation');
   scrollMenuContainerEl.classList.toggle('active');
   scrollMenuBtnEl.classList.toggle('active');
 }

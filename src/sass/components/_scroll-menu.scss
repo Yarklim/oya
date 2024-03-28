@@ -116,6 +116,26 @@
 }
 
 // ========== Decor Background ============
+.scroll__bg--circles {
+  &.circles-animation {
+    .scroll__menu--decor path {
+      stroke-dasharray: 4000;
+
+      animation: draw 3s linear forwards;
+
+      &:nth-child(1) {
+        stroke-dashoffset: 8000;
+      }
+      &:nth-child(2) {
+        stroke-dashoffset: 6000;
+      }
+      &:nth-child(3) {
+        stroke-dashoffset: 4000;
+      }
+    }
+  }
+}
+
 .scroll__menu--decor {
   width: clamp(18.75rem, 13.125rem + 28.13vw, 46.875rem); // 300 - 750
   height: clamp(18.75rem, 13.125rem + 28.13vw, 46.875rem); // 300 - 750

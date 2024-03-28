@@ -94,13 +94,37 @@
 }
 
 // ========== Decor Background ============
-.scroll__menu--decor {
+.modal__bg--circles {
+  &.circles-animation {
+    .modal__menu--decor path {
+      stroke-dasharray: 4000;
+
+      animation: draw 3s linear forwards;
+
+      &:nth-child(1) {
+        stroke-dashoffset: 8000;
+      }
+      &:nth-child(2) {
+        stroke-dashoffset: 6000;
+      }
+      &:nth-child(3) {
+        stroke-dashoffset: 4000;
+      }
+    }
+  }
+}
+
+.modal__menu--decor {
   width: clamp(18.75rem, 12.5rem + 31.25vw, 50rem); // 300 - 800
   height: clamp(18.75rem, 12.5rem + 31.25vw, 50rem); // 300 - 800
 
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 0;
+  right: 0;
+
+  margin: auto;
 
   z-index: 1;
 }
