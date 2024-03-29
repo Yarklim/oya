@@ -111,7 +111,7 @@
 
   transition: color 0.3s ease;
 
-  &.active__nav-link {
+  &.active-link {
     font-weight: 400;
     color: var(--light-color);
   }
@@ -120,8 +120,8 @@
   &:focus-visible {
     color: var(--light-gray-color);
   }
-  &:hover.active__nav-link,
-  &:focus-visible.active__nav-link {
+  &:hover.active-link,
+  &:focus-visible.active-link {
     color: var(--light-color);
   }
 }

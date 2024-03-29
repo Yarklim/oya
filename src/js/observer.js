@@ -34,8 +34,8 @@ window.onload = () => {
           }
         });
 
-        //   ------------ Collection Animated ------------
-        if (entryData === 'collection') {
+        //   ------------ Carousel Animated ------------
+        if (entryData === 'carousel') {
           carouselEl.classList.add('animated');
         }
       }

@@ -228,7 +228,7 @@
   align-items: center;
   gap: 0 10px;
 
-  color: var(--opacity-btnHover-bg);
+  color: var(--opacity-light-color);
 
   @media screen and (min-width: 768px) {
     margin-top: clamp(1.875rem, -3.125rem + 10.42vw, 9.375rem); // 30 - 150
@@ -302,7 +302,7 @@
 
       font-size: clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem); // 10 - 20
       line-height: 1;
-      color: var(--light-gray-color);
+      color: var(--opacity-light-color);
     }
   }
 }

@@ -187,7 +187,7 @@ body {
   --font-sans: "Pontano Sans", sans-serif;
   --font-serif: "Source Serif 4", serif;
   --light-color: #fff;
-  --opacity-light-color: #ffffff88;
+  --opacity-light-color: #ffffffa1;
   --light-smooth-color: #ebebeb;
   --light-gray-color: #656c7e;
   --opacity-gray-color: #656c7e60;
@@ -417,14 +417,14 @@ body {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-.nav-menu__nav-link.active__nav-link {
+.nav-menu__nav-link.active-link {
   font-weight: 400;
   color: var(--light-color);
 }
 .nav-menu__nav-link:hover, .nav-menu__nav-link:focus-visible {
   color: var(--light-gray-color);
 }
-.nav-menu__nav-link:hover.active__nav-link, .nav-menu__nav-link:focus-visible.active__nav-link {
+.nav-menu__nav-link:hover.active-link, .nav-menu__nav-link:focus-visible.active-link {
   color: var(--light-color);
 }
 
@@ -1522,7 +1522,7 @@ body {
   font-style: italic;
   font-weight: 300;
   line-height: 1;
-  color: var(--orange-smooth-color);
+  color: var(--orange-color);
 }
 .first__item-text .first__item--text {
   margin-top: clamp(2.5rem, -2.708rem + 10.85vw, 10.313rem);
@@ -1561,7 +1561,7 @@ body {
   font-style: italic;
   font-weight: 300;
   line-height: 1;
-  color: var(--orange-smooth-color);
+  color: var(--orange-color);
 }
 .second__item-text .second__item--text {
   font-size: clamp(1.125rem, 0.901rem + 1.12vw, 1.438rem);
@@ -3251,7 +3251,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 0 10px;
-  color: var(--opacity-btnHover-bg);
+  color: var(--opacity-light-color);
 }
 @media screen and (min-width: 768px) {
   .hills__coord--wrapper {
@@ -3329,7 +3329,7 @@ body {
         flex-shrink: 0;
     font-size: clamp(0.625rem, 0.208rem + 0.87vw, 1.25rem);
     line-height: 1;
-    color: var(--light-gray-color);
+    color: var(--opacity-light-color);
   }
 }
 
