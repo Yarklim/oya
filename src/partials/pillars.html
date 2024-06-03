@@ -212,12 +212,22 @@
     <!-- Slider Navigation -->
 
     <div class="pillars__slider--nav-btns">
-      <button class="pillars__slider--prev" aria-label="to previous image">
+      <button
+        id="prev"
+        class="pillars__slider--prev"
+        data-slider-nav
+        aria-label="to previous image"
+      >
         <svg class="pillars__slider--nav-icon" viewBox="0 0 140 11">
           <path d="M11 5h129v1H11zM0 5.5 9 0v11L0 5.5Z" />
         </svg>
       </button>
-      <button class="pillars__slider--next" aria-label="to next image">
+      <button
+        id="next"
+        class="pillars__slider--next"
+        data-slider-nav
+        aria-label="to next image"
+      >
         <svg class="pillars__slider--nav-icon" viewBox="0 0 140 11">
           <path d="M0 5h129v1H0zM140 5.5 131 0v11l9-5.5Z" />
         </svg>
@@ -225,9 +235,9 @@
     </div>
 
     <!-- Slider -->
-    <ul class="pillars__slider--container">
-      <li class="pillars__slide">
-        <picture class="pillars__slide--img">
+    <ul class="pillars__slider--container" data-slider-list>
+      <li class="pillars__slide" data-slider-item>
+        <picture class="pillars__slide--img" draggable="false">
           <source
             media="(max-width: 767.9px)"
             srcset="
@@ -290,8 +300,8 @@
           supplements based on the latest research in longevity.
         </p>
       </li>
-      <li class="pillars__slide">
-        <picture class="pillars__slide--img">
+      <li class="pillars__slide" data-slider-item>
+        <picture class="pillars__slide--img" draggable="false">
           <source
             media="(max-width: 767.9px)"
             srcset="
@@ -355,8 +365,8 @@
           health.
         </p>
       </li>
-      <li class="pillars__slide">
-        <picture class="pillars__slide--img">
+      <li class="pillars__slide" data-slider-item>
+        <picture class="pillars__slide--img" draggable="false">
           <source
             media="(max-width: 767.9px)"
             srcset="
@@ -419,8 +429,8 @@
           supplements based on the latest research in longevity.
         </p>
       </li>
-      <li class="pillars__slide">
-        <picture class="pillars__slide--img">
+      <li class="pillars__slide" data-slider-item>
+        <picture class="pillars__slide--img" draggable="false">
           <source
             media="(max-width: 767.9px)"
             srcset="

@@ -220,6 +220,7 @@ body {
     rgba(54, 58, 69, 0.904) 100%
   );
   --green-gradient: linear-gradient(0deg, #3e4c3d 0%, #3e4c3d 100%);
+  --transition: cubic-bezier(0.1, 0.7, 0, 1);
 }
 
 .visually--hidden {
@@ -2507,153 +2508,127 @@ body {
 }
 
 .collection__list {
-  width: 100%;
-  margin-top: 30px;
+  width: 80%;
+  margin: 50px auto 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 5px;
+  gap: 4px;
+  -webkit-perspective: calc(var(--index) * 32);
+          perspective: calc(var(--index) * 32);
+}
+.collection__list .collection__item:hover {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 10));
+          transform: translateZ(calc(var(--index) * 10));
 }
 
 .collection__item {
-  width: clamp(3.75rem, 1.071rem + 13.39vw, 7.5rem);
-  height: clamp(3.75rem, 1.071rem + 13.39vw, 7.5rem);
-  background-color: var(--gray-light-bg);
-}
-.collection__item.orange-bg {
-  background-color: var(--brown-dark-bg);
-}
-.collection__item.item-1.active-item {
-  -webkit-animation: bg-item 12s ease infinite;
-          animation: bg-item 12s ease infinite;
-}
-.collection__item.item-2.active-item {
-  -webkit-animation: bg-item 15s ease infinite;
-          animation: bg-item 15s ease infinite;
-}
-.collection__item.item-3.active-item {
-  -webkit-animation: bg-item 19s ease infinite;
-          animation: bg-item 19s ease infinite;
-}
-.collection__item.item-4.active-item {
-  -webkit-animation: bg-item 17s ease infinite;
-          animation: bg-item 17s ease infinite;
-}
-.collection__item.item-5.active-item {
-  -webkit-animation: bg-item 10s ease infinite;
-          animation: bg-item 10s ease infinite;
-}
-.collection__item.item-6.active-item {
-  -webkit-animation: bg-item 16s ease infinite;
-          animation: bg-item 16s ease infinite;
-}
-.collection__item.item-7.active-item {
-  -webkit-animation: bg-item 12s ease infinite;
-          animation: bg-item 12s ease infinite;
-}
-.collection__item.item-8.active-item {
-  -webkit-animation: bg-item 17s ease infinite;
-          animation: bg-item 17s ease infinite;
-}
-.collection__item.item-9.active-item {
-  -webkit-animation: bg-item 15.5s ease infinite;
-          animation: bg-item 15.5s ease infinite;
-}
-.collection__item.item-10.active-item {
-  -webkit-animation: bg-item 18.5s ease infinite;
-          animation: bg-item 18.5s ease infinite;
-}
-.collection__item.item-11.active-item {
-  -webkit-animation: bg-item 8.5s ease infinite;
-          animation: bg-item 8.5s ease infinite;
-}
-.collection__item.item-12.active-item {
-  -webkit-animation: bg-item 18s ease infinite;
-          animation: bg-item 18s ease infinite;
-}
-.collection__item.item-13.active-item {
-  -webkit-animation: bg-item 12s ease infinite;
-          animation: bg-item 12s ease infinite;
-}
-.collection__item.item-14.active-item {
-  -webkit-animation: bg-item 9s ease infinite;
-          animation: bg-item 9s ease infinite;
-}
-.collection__item.item-15.active-item {
-  -webkit-animation: bg-item 20s ease infinite;
-          animation: bg-item 20s ease infinite;
-}
-.collection__item.item-16.active-item {
-  -webkit-animation: bg-item 15s ease infinite;
-          animation: bg-item 15s ease infinite;
-}
-.collection__item.item-17.active-item {
-  -webkit-animation: bg-item 10s ease infinite;
-          animation: bg-item 10s ease infinite;
-}
-.collection__item.item-18.active-item {
-  -webkit-animation: bg-item 17s ease infinite;
-          animation: bg-item 17s ease infinite;
-}
-.collection__item.item-19.active-item {
-  -webkit-animation: bg-item 14s ease infinite;
-          animation: bg-item 14s ease infinite;
-}
-.collection__item.item-20.active-item {
-  -webkit-animation: bg-item 8s ease infinite;
-          animation: bg-item 8s ease infinite;
+  width: calc(var(--index) * 4);
+  height: calc(var(--index) * 10);
+  background-size: cover;
+  background-position: center;
+  background-color: #222;
+  cursor: pointer;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  -webkit-transition: width 1s var(--transition), -webkit-transform 1s var(--transition), -webkit-filter 2s var(--transition);
+  transition: width 1s var(--transition), -webkit-transform 1s var(--transition), -webkit-filter 2s var(--transition);
+  transition: transform 1s var(--transition), filter 2s var(--transition), width 1s var(--transition);
+  transition: transform 1s var(--transition), filter 2s var(--transition), width 1s var(--transition), -webkit-transform 1s var(--transition), -webkit-filter 2s var(--transition);
+  will-change: transform, filter, width;
 }
 
-@-webkit-keyframes bg-item {
-  0% {
-    opacity: 0;
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
-  33% {
-    opacity: 1;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
+.collection__item::before,
+.collection__item::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: calc(var(--index) * -1);
 }
 
-@keyframes bg-item {
-  0% {
-    opacity: 0;
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
-  33% {
-    opacity: 1;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(0);
-            transform: rotateY(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
-  }
+.collection__item::after {
+  left: calc(var(--index) * -1);
 }
+
+.collection__list .collection__item:active,
+.collection__list .collection__item:focus {
+  width: 360px;
+  margin: 0 10px;
+  z-index: 100;
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 10));
+          transform: translateZ(calc(var(--index) * 10));
+}
+
+/* ======== Right ======= */
+.collection__list .collection__item:hover + * {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 8)) rotateY(35deg);
+          transform: translateZ(calc(var(--index) * 8)) rotateY(35deg);
+  z-index: -1;
+}
+
+.collection__list .collection__item:hover + * + * {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 6.5)) rotateY(40deg);
+          transform: translateZ(calc(var(--index) * 6.5)) rotateY(40deg);
+  z-index: -2;
+}
+
+.collection__list .collection__item:hover + * + * + * {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 3.5)) rotateY(30deg);
+          transform: translateZ(calc(var(--index) * 3.5)) rotateY(30deg);
+  z-index: -3;
+}
+
+.collection__list .collection__item:hover + * + * + * + * {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 1)) rotateY(15deg);
+          transform: translateZ(calc(var(--index) * 1)) rotateY(15deg);
+  z-index: -4;
+}
+
+/* ======== Left ======= */
+.collection__list .collection__item:has(+ :hover) {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 8)) rotateY(-35deg);
+          transform: translateZ(calc(var(--index) * 8)) rotateY(-35deg);
+}
+
+.collection__list .collection__item:has(+ * + :hover) {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 6.5)) rotateY(-40deg);
+          transform: translateZ(calc(var(--index) * 6.5)) rotateY(-40deg);
+}
+
+.collection__list .collection__item:has(+ * + * + :hover) {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 3.5)) rotateY(-30deg);
+          transform: translateZ(calc(var(--index) * 3.5)) rotateY(-30deg);
+}
+
+.collection__list .collection__item:has(+ * + * + * + :hover) {
+  -webkit-filter: inherit;
+          filter: inherit;
+  -webkit-transform: translateZ(calc(var(--index) * 1)) rotateY(-15deg);
+          transform: translateZ(calc(var(--index) * 1)) rotateY(-15deg);
+}
+
 .journey {
   width: 100%;
   background: var(--green-gradient);

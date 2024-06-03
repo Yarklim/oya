@@ -33,104 +33,107 @@
 }
 
 .collection__list {
-  width: 100%;
+  width: 80%;
 
-  margin-top: 30px;
+  margin: 50px auto 0 auto;
 
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
+  gap: 4px;
+
+  perspective: calc(var(--index) * 32);
+
+  & .collection__item:hover {
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 10));
+  }
 }
 
 .collection__item {
-  width: clamp(3.75rem, 1.071rem + 13.39vw, 7.5rem); // 60 - 120
-  height: clamp(3.75rem, 1.071rem + 13.39vw, 7.5rem); // 60 - 120
+  width: calc(var(--index) * 4);
+  height: calc(var(--index) * 10);
 
-  background-color: var(--gray-light-bg);
+  background-size: cover;
+  background-position: center;
+  background-color: #222;
 
-  &.orange-bg {
-    background-color: var(--brown-dark-bg);
-  }
+  cursor: pointer;
 
-  &.item-1.active-item {
-    animation: bg-item 12s ease infinite;
-  }
-  &.item-2.active-item {
-    animation: bg-item 15s ease infinite;
-  }
-  &.item-3.active-item {
-    animation: bg-item 19s ease infinite;
-  }
-  &.item-4.active-item {
-    animation: bg-item 17s ease infinite;
-  }
-  &.item-5.active-item {
-    animation: bg-item 10s ease infinite;
-  }
-  &.item-6.active-item {
-    animation: bg-item 16s ease infinite;
-  }
-  &.item-7.active-item {
-    animation: bg-item 12s ease infinite;
-  }
-  &.item-8.active-item {
-    animation: bg-item 17s ease infinite;
-  }
-  &.item-9.active-item {
-    animation: bg-item 15.5s ease infinite;
-  }
-  &.item-10.active-item {
-    animation: bg-item 18.5s ease infinite;
-  }
-  &.item-11.active-item {
-    animation: bg-item 8.5s ease infinite;
-  }
-  &.item-12.active-item {
-    animation: bg-item 18s ease infinite;
-  }
-  &.item-13.active-item {
-    animation: bg-item 12s ease infinite;
-  }
-  &.item-14.active-item {
-    animation: bg-item 9s ease infinite;
-  }
-  &.item-15.active-item {
-    animation: bg-item 20s ease infinite;
-  }
-  &.item-16.active-item {
-    animation: bg-item 15s ease infinite;
-  }
-  &.item-17.active-item {
-    animation: bg-item 10s ease infinite;
-  }
-  &.item-18.active-item {
-    animation: bg-item 17s ease infinite;
-  }
-  &.item-19.active-item {
-    animation: bg-item 14s ease infinite;
-  }
-  &.item-20.active-item {
-    animation: bg-item 8s ease infinite;
-  }
+  filter: brightness(0.3);
+
+  transition: transform 1s var(--transition), filter 2s var(--transition),
+    width 1s var(--transition);
+  will-change: transform, filter, width;
 }
 
-// ========= Animation =========
-@keyframes bg-item {
-  0% {
-    opacity: 0;
-    transform: rotateY(90deg);
-  }
-  33% {
-    opacity: 1;
-    transform: rotateY(0);
-  }
-  50% {
-    opacity: 1;
-    transform: rotateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: rotateY(90deg);
-  }
+.collection__item::before,
+.collection__item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  right: calc(var(--index) * -1);
+}
+
+.collection__item::after {
+  left: calc(var(--index) * -1);
+}
+
+.collection__list .collection__item:active,
+.collection__list .collection__item:focus {
+  width: 360px;
+
+  margin: 0 10px;
+
+  z-index: 100;
+
+  filter: inherit;
+
+  transform: translateZ(calc(var(--index) * 10));
+}
+
+/* ======== Right ======= */
+.collection__list .collection__item:hover + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 8)) rotateY(35deg);
+  z-index: -1;
+}
+
+.collection__list .collection__item:hover + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 6.5)) rotateY(40deg);
+  z-index: -2;
+}
+
+.collection__list .collection__item:hover + * + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 3.5)) rotateY(30deg);
+  z-index: -3;
+}
+
+.collection__list .collection__item:hover + * + * + * + * {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 1)) rotateY(15deg);
+  z-index: -4;
+}
+
+/* ======== Left ======= */
+.collection__list .collection__item:has(+ :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 8)) rotateY(-35deg);
+}
+
+.collection__list .collection__item:has(+ * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 6.5)) rotateY(-40deg);
+}
+
+.collection__list .collection__item:has(+ * + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 3.5)) rotateY(-30deg);
+}
+
+.collection__list .collection__item:has(+ * + * + * + :hover) {
+  filter: inherit;
+  transform: translateZ(calc(var(--index) * 1)) rotateY(-15deg);
 }

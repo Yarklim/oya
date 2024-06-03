@@ -45,4 +45,7 @@
     rgba(54, 58, 69, 0.904) 100%
   );
   --green-gradient: linear-gradient(0deg, #3e4c3d 0%, #3e4c3d 100%);
+
+  //  ----------------- Animation ---------------
+  --transition: cubic-bezier(0.1, 0.7, 0, 1);
 }
