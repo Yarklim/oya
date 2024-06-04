@@ -142,9 +142,15 @@
 
   background-color: var(--opacity-gray-color);
 
-  &:hover svg {
+  transition: all 0.3s var(--transition);
+
+  &:hover {
     transform: scale(1.05);
-    fill: var(--blue-bg);
+
+    & svg {
+      transform: scale(1.05);
+      fill: var(--blue-bg);
+    }
   }
 
   & svg {
