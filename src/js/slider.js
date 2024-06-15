@@ -1,11 +1,13 @@
 import Swiper from 'swiper';
-// import { Navigation, Pagination } from 'swiper/modules';
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/swiper.css';
 
 const swiperPillars = new Swiper('.swiper__pillars', {
   speed: 700,
-  spaceBetween: 0,
+  spaceBetween: 40,
+});
+
+const swiperJourney = new Swiper('.swiper__journey', {
+  speed: 700,
+  spaceBetween: 40,
 });

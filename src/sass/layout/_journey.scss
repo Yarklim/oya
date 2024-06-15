@@ -32,30 +32,23 @@
 }
 
 // =========== Slider ===========
-.journey__slider--container {
-  width: calc(100% * 5);
+.swiper__journey {
+  width: 80%;
 
-  margin-top: 100px;
-  //   margin-left: clamp(1.875rem, -2rem + 19.38vw, 21.25rem); // 30 - 340
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 40%;
+  }
+}
+
+.journey__slider--container {
+  margin-top: clamp(6.25rem, 4.625rem + 8.13vw, 14.375rem); // 100 - 230
 
   display: inline-flex;
 
-  scrollbar-width: none;
-  overflow: hidden;
-
-  transform: translateX(
-    calc(100% / -5 + clamp(2.5rem, -3.125rem + 28.13vw, 30.625rem) * 2)
-  );
-
-  will-change: transform;
-
-  transition: transform 0.3s ease-out;
-
   cursor: grab;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 40px;
-  }
 }
 
 .journey__slide {
@@ -64,71 +57,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  //   padding: 0 clamp(0.313rem, -0.563rem + 4.38vw, 4.688rem); // 5 - 75
 }
 
 .journey__slide--img {
-  opacity: 0.3;
-
   user-select: none;
-
-  transform: scale(0.75);
-  transition: all 0.3s ease-in-out;
-}
-
-.journey__slide.active-img .journey__slide--img {
-  opacity: 1;
-
-  transform: scale(1);
-}
-
-.grabbing {
-  cursor: grabbing;
-
-  & .journey__slide--img {
-    transform: scale(0.9);
-  }
-}
-
-// ========== Navigation ==========
-.journey__slide--nav {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    margin-top: clamp(1.25rem, -1.25rem + 5.21vw, 5rem); // 20 - 80
-    margin-left: 50px; // 50 - 80
-
-    display: flex;
-    gap: 0 clamp(1.25rem, 2.6vw, 3.125rem); // 20 - 50
-  }
-}
-
-.journey__slide--prev,
-.journey__slide--next {
-  width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem); // 70 - 180
-
-  padding: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem) 0; // 10 - 20
-}
-
-.journey__slide--nav-icon {
-  width: clamp(3.125rem, 2rem + 5.63vw, 8.75rem); // 50 - 140
-
-  fill: var(--light-smooth-color);
 }
 
 // =========== Subtitle ==========
 .journey__subtitle--wrapper {
-  margin-top: 30px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px 0;
-
-  @media screen and (min-width: 768px) {
-    margin-top: -80px;
-  }
 }
 
 .journey__subtitle {

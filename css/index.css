@@ -2357,54 +2357,6 @@ body {
   }
 }
 
-.pillars__slider--nav-btns {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .pillars__slider--nav-btns {
-    margin-top: clamp(1.875rem, 1.042rem + 1.74vw, 3.125rem);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 0 clamp(1.25rem, 2.6vw, 3.125rem);
-  }
-}
-
-.pillars__slider--prev,
-.pillars__slider--next {
-  width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem);
-  padding: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem) 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .pillars__slider--prev,
-  .pillars__slider--next {
-    width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem);
-    padding: clamp(0.313rem, -0.313rem + 1.3vw, 1.25rem) 0;
-  }
-}
-
-.pillars__slider--nav-icon {
-  width: clamp(3.125rem, 2rem + 5.63vw, 8.75rem);
-  fill: var(--dark-gray-color);
-}
-@media screen and (min-width: 768px) {
-  .pillars__slider--nav-icon {
-    width: clamp(3.75rem, 1.25rem + 5.21vw, 7.5rem);
-  }
-}
-
 .swiper__pillars {
   width: 70%;
   height: auto;
@@ -2415,7 +2367,6 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 0 clamp(0.938rem, 0.375rem + 2.81vw, 3.75rem);
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -2661,28 +2612,27 @@ body {
   }
 }
 
+.swiper__journey {
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .swiper__journey {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .swiper__journey {
+    width: 40%;
+  }
+}
+
 .journey__slider--container {
-  width: 500%;
-  margin-top: 100px;
+  margin-top: clamp(6.25rem, 4.625rem + 8.13vw, 14.375rem);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  scrollbar-width: none;
-  overflow: hidden;
-  -webkit-transform: translateX(calc(-20% + clamp(2.5rem, -3.125rem + 28.13vw, 30.625rem) * 2));
-          transform: translateX(calc(-20% + clamp(2.5rem, -3.125rem + 28.13vw, 30.625rem) * 2));
-  will-change: transform;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   cursor: -webkit-grab;
   cursor: grab;
-}
-@media screen and (min-width: 768px) {
-  .journey__slider--container {
-    margin-top: 40px;
-  }
 }
 
 .journey__slide {
@@ -2699,59 +2649,14 @@ body {
 }
 
 .journey__slide--img {
-  opacity: 0.3;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.journey__slide.active-img .journey__slide--img {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.grabbing {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-.grabbing .journey__slide--img {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.journey__slide--nav {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .journey__slide--nav {
-    margin-top: clamp(1.25rem, -1.25rem + 5.21vw, 5rem);
-    margin-left: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0 clamp(1.25rem, 2.6vw, 3.125rem);
-  }
-}
-
-.journey__slide--prev,
-.journey__slide--next {
-  width: clamp(4.375rem, 3rem + 6.88vw, 11.25rem);
-  padding: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem) 0;
-}
-
-.journey__slide--nav-icon {
-  width: clamp(3.125rem, 2rem + 5.63vw, 8.75rem);
-  fill: var(--light-smooth-color);
 }
 
 .journey__subtitle--wrapper {
-  margin-top: 30px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2763,11 +2668,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px 0;
-}
-@media screen and (min-width: 768px) {
-  .journey__subtitle--wrapper {
-    margin-top: -80px;
-  }
 }
 
 .journey__subtitle {
