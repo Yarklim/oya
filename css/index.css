@@ -2723,6 +2723,11 @@ body {
   line-height: 1.4;
   color: var(--dark-gray-color);
 }
+@media screen and (min-width: 768px) {
+  .roadmap__text {
+    width: 70%;
+  }
+}
 
 .roadmap__list {
   width: 100%;
