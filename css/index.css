@@ -2994,7 +2994,7 @@ body {
 .hills__bg-icon {
   width: clamp(2.5rem, 0.833rem + 3.47vw, 5rem);
   height: clamp(2.5rem, 0.833rem + 3.47vw, 5rem);
-  fill: var(--light-gray-color);
+  fill: var(--orange-color);
   position: absolute;
   top: 0;
   left: 0;
