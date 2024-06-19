@@ -4,7 +4,7 @@
   <div class="hills__wrapper">
     <div class="hills__text--wrapper">
       <!-- Slider Navigation -->
-      <div class="hills__slider--nav-wrapper">
+      <!-- <div class="hills__slider--nav-wrapper">
         <div class="hills__slider--nav-btns">
           <button class="hills__slider--prev" aria-label="to previous image">
             <svg class="hills__slider--nav-icon" viewBox="0 0 140 11">
@@ -45,7 +45,7 @@
             <p>Philippines</p>
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- Test Content -->
       <article class="hills__descr">
@@ -60,370 +60,92 @@
             tools.</span
           >
         </p>
-        <div class="hills__coord--wrapper">
+        <!-- <div class="hills__coord--wrapper">
           <svg width="30" height="30" class="hills__coord--icon">
             <use href="./icons/sprite.svg#location"></use>
           </svg>
           <span class="hills__coord--text">20.2536° N / 69.3321° W</span>
-        </div>
+        </div> -->
       </article>
     </div>
 
     <!-- Slider -->
-    <ul class="hills__slider--container">
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide1@0.5x.webp 1x,
-              ./images/hills/slide1@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide1@0.5x.jpg 1x,
-              ./images/hills/slide1@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide1@1x.webp 1x,
-              ./images/hills/slide1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide1@1x.jpg 1x,
-              ./images/hills/slide1@2x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+    <div class="swiper__hills">
+      <ul class="swiper-wrapper hills__slider--container">
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide1@1x.jpg"
+            src="./images/hills/slide1@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide2@0.5x.webp 1x,
-              ./images/hills/slide2@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide2@0.5x.jpg 1x,
-              ./images/hills/slide2@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide2@1x.webp 1x,
-              ./images/hills/slide2@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide2@1x.jpg 1x,
-              ./images/hills/slide2@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide2@1x.jpg"
+            src="./images/hills/slide2@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide3@0.5x.webp 1x,
-              ./images/hills/slide3@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide3@0.5x.jpg 1x,
-              ./images/hills/slide3@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide3@1x.webp 1x,
-              ./images/hills/slide3@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide3@1x.jpg 1x,
-              ./images/hills/slide3@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide3@1x.jpg"
+            src="./images/hills/slide3@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide4@0.5x.webp 1x,
-              ./images/hills/slide4@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide4@0.5x.jpg 1x,
-              ./images/hills/slide4@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide4@1x.webp 1x,
-              ./images/hills/slide4@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide4@1x.jpg 1x,
-              ./images/hills/slide4@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide4@1x.jpg"
+            src="./images/hills/slide4@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide5@0.5x.webp 1x,
-              ./images/hills/slide5@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide5@0.5x.jpg 1x,
-              ./images/hills/slide5@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide5@1x.webp 1x,
-              ./images/hills/slide5@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide5@1x.jpg 1x,
-              ./images/hills/slide5@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide5@1x.jpg"
+            src="./images/hills/slide5@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide6@0.5x.webp 1x,
-              ./images/hills/slide6@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide6@0.5x.jpg 1x,
-              ./images/hills/slide6@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide6@1x.webp 1x,
-              ./images/hills/slide6@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide6@1x.jpg 1x,
-              ./images/hills/slide6@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide6@1x.jpg"
+            src="./images/hills/slide6@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide7@0.5x.webp 1x,
-              ./images/hills/slide7@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide7@0.5x.jpg 1x,
-              ./images/hills/slide7@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide7@1x.webp 1x,
-              ./images/hills/slide7@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide7@1x.jpg 1x,
-              ./images/hills/slide7@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide7@1x.jpg"
+            src="./images/hills/slide7@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-      <li class="hills__slide">
-        <picture class="hills__slide--img">
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide8@0.5x.webp 1x,
-              ./images/hills/slide8@1x.webp   2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767.9px)"
-            srcset="
-              ./images/hills/slide8@0.5x.jpg 1x,
-              ./images/hills/slide8@1x.jpg   2x
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide8@1x.webp 1x,
-              ./images/hills/slide8@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ./images/hills/slide8@1x.jpg 1x,
-              ./images/hills/slide8@1x.jpg 2x
-            "
-            type="image/jpg"
-          />
-
+        </li>
+        <li class="swiper-slide hills__slide">
           <img
-            src="./images/hills/slide8@1x.jpg"
+            src="./images/hills/slide8@2x.jpg"
             alt="hotel"
-            width="300"
-            height="300"
+            width="600"
+            height="600"
             loading="lazy"
           />
-        </picture>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <!-- Background icons -->
@@ -431,7 +153,7 @@
     <svg width="50" height="50" class="hills__bg-icon hills-icon__1">
       <use href="./icons/sprite.svg#location"></use>
     </svg>
-    <svg width="50" height="50" class="hills__bg-icon hills-icon__2 nav-active">
+    <svg width="50" height="50" class="hills__bg-icon hills-icon__2">
       <use href="./icons/sprite.svg#location"></use>
     </svg>
     <svg width="50" height="50" class="hills__bg-icon hills-icon__3">

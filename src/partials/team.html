@@ -7,166 +7,106 @@
   <div class="team__wrapper">
     <h2 class="team__title">THE TEAM</h2>
 
-    <ul class="team__list">
-      <li class="team__item">
-        <picture class="team__item--img">
-          <source
-            srcset="
-              ./images/team/team1@1x.webp 1x,
-              ./images/team/team1@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/team/team1@1x.png 1x,
-              ./images/team/team1@2x.png 2x
-            "
-            type="image/png"
-          />
+    <!-- Background Circles -->
+    <svg
+      class="bg-circles"
+      data-element="team"
+      width="1392"
+      height="1353"
+      viewBox="0 0 1392 1353"
+      fill="none"
+    >
+      <g opacity="0.3">
+        <path
+          d="M695.9 1020.63C974.41 1020.63 1200.19 792.378 1200.19 510.815C1200.19 229.252 974.41 1 695.9 1C417.39 1 191.613 229.252 191.613 510.815C191.613 792.378 417.39 1020.63 695.9 1020.63Z"
+          stroke="#656c7e"
+          stroke-width="3"
+          stroke-miterlimit="10"
+        />
+        <path
+          d="M886.404 1351.77C1164.91 1351.77 1390.69 1123.52 1390.69 841.956C1390.69 560.393 1164.91 332.142 886.404 332.142C607.894 332.142 382.117 560.393 382.117 841.956C382.117 1123.52 607.894 1351.77 886.404 1351.77Z"
+          stroke="#656c7e"
+          stroke-width="3"
+          stroke-miterlimit="10"
+        />
+        <path
+          d="M505.286 1351.77C783.796 1351.77 1009.57 1123.52 1009.57 841.956C1009.57 560.393 783.796 332.142 505.286 332.142C226.777 332.142 1 560.393 1 841.956C1 1123.52 226.777 1351.77 505.286 1351.77Z"
+          stroke="#656c7e"
+          stroke-width="3"
+          stroke-miterlimit="10"
+        />
+      </g>
+    </svg>
+
+    <div class="swiper__team">
+      <ul class="swiper-wrapper team__list">
+        <li class="swiper-slide team__item">
           <img
-            src="./images/team/team1@1x.png"
+            src="./images/team/team1@2x.png"
             alt="team"
-            width="360"
-            height="360"
+            width="720"
+            height="720"
             loading="lazy"
           />
-        </picture>
-        <h3 class="team__item--title">MAYAN METZLER</h3>
-        <p class="team__item--text">
-          Successful Entrepreneur, built the only European kitchen chain in the
-          USA, German Kitchen Center. CEO of Mycobriah, cancer & covid
-          biomedical research firm. And philanthropist, leading the MyPlanetweb.
-          com organization, supporting good causes throughout the spectrum of
-          health, sustainability & construction.
-        </p>
-      </li>
-      <li class="team__item">
-        <picture class="team__item--img">
-          <source
-            srcset="
-              ./images/team/team2@1x.webp 1x,
-              ./images/team/team2@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/team/team2@1x.png 1x,
-              ./images/team/team2@2x.png 2x
-            "
-            type="image/png"
-          />
+          <h3 class="team__item--title">MAYAN METZLER</h3>
+          <p class="team__item--text">
+            Successful Entrepreneur, built the only European kitchen chain in
+            the USA, German Kitchen Center. CEO of Mycobriah, cancer & covid
+            biomedical research firm. And philanthropist, leading the
+            MyPlanetweb. com organization, supporting good causes throughout the
+            spectrum of health, sustainability & construction.
+          </p>
+        </li>
+        <li class="swiper-slide team__item">
           <img
-            src="./images/team/team2@1x.png"
+            src="./images/team/team2@2x.png"
             alt="team"
-            width="360"
-            height="360"
+            width="720"
+            height="720"
             loading="lazy"
           />
-        </picture>
-        <h3 class="team__item--title">MICHALA METZLER</h3>
-        <p class="team__item--text">
-          Designer - focused on innovations in architecture & building systems.
-          Philanthropist - founder of MyLifeMyPlanet.org, a non profit
-          organization focused on synchrony of eastern & western medical
-          systems. Founder of TheBespokeVenue.com, wedding & event company
-        </p>
-      </li>
-      <li class="team__item">
-        <picture class="team__item--img">
-          <source
-            srcset="
-              ./images/team/team3@1x.webp 1x,
-              ./images/team/team3@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/team/team3@1x.png 1x,
-              ./images/team/team3@2x.png 2x
-            "
-            type="image/png"
-          />
+          <h3 class="team__item--title">MICHALA METZLER</h3>
+          <p class="team__item--text">
+            Designer - focused on innovations in architecture & building
+            systems. Philanthropist - founder of MyLifeMyPlanet.org, a non
+            profit organization focused on synchrony of eastern & western
+            medical systems. Founder of TheBespokeVenue.com, wedding & event
+            company
+          </p>
+        </li>
+        <li class="swiper-slide team__item">
           <img
-            src="./images/team/team3@1x.png"
+            src="./images/team/team3@2x.png"
             alt="team"
-            width="360"
-            height="360"
+            width="720"
+            height="720"
             loading="lazy"
           />
-        </picture>
-        <h3 class="team__item--title">JOE ZOCCALI</h3>
-        <p class="team__item--text">
-          Entrepreneur/Attorney/Real Estate Investor Build and Sold SaaS Company
-          (Club OS) (2018), GC/SVP -Marketing Evolution (Raised $50M+), Tomorrow
-          at Adtech/Martech (Acquired), Developed and Manage over Mult-Fam
-          Properties NY/FL/NJ.
-        </p>
-      </li>
-      <li class="team__item">
-        <picture class="team__item--img">
-          <source
-            srcset="
-              ./images/team/team4@1x.webp 1x,
-              ./images/team/team4@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/team/team4@1x.png 1x,
-              ./images/team/team4@2x.png 2x
-            "
-            type="image/png"
-          />
+          <h3 class="team__item--title">JOE ZOCCALI</h3>
+          <p class="team__item--text">
+            Entrepreneur/Attorney/Real Estate Investor Build and Sold SaaS
+            Company (Club OS) (2018), GC/SVP -Marketing Evolution (Raised
+            $50M+), Tomorrow at Adtech/Martech (Acquired), Developed and Manage
+            over Mult-Fam Properties NY/FL/NJ.
+          </p>
+        </li>
+        <li class="swiper-slide team__item">
           <img
-            src="./images/team/team4@1x.png"
+            src="./images/team/team4@2x.png"
             alt="team"
-            width="360"
-            height="360"
+            width="720"
+            height="720"
             loading="lazy"
           />
-        </picture>
-        <h3 class="team__item--title">BEN ASIF NISHITANI</h3>
-        <p class="team__item--text">
-          Has worked in multiple fields from education to entertainment to
-          economics to medicine to farming to energy, spanning 8 countries and 5
-          continents. Hoping to bring all of his acquired skills together to
-          better help Oya.
-        </p>
-      </li>
-    </ul>
+          <h3 class="team__item--title">BEN ASIF NISHITANI</h3>
+          <p class="team__item--text">
+            Has worked in multiple fields from education to entertainment to
+            economics to medicine to farming to energy, spanning 8 countries and
+            5 continents. Hoping to bring all of his acquired skills together to
+            better help Oya.
+          </p>
+        </li>
+      </ul>
+    </div>
   </div>
-  <!-- Background Circles -->
-  <svg
-    class="bg-circles"
-    data-element="team"
-    width="1392"
-    height="1353"
-    viewBox="0 0 1392 1353"
-    fill="none"
-  >
-    <g opacity="0.3">
-      <path
-        d="M695.9 1020.63C974.41 1020.63 1200.19 792.378 1200.19 510.815C1200.19 229.252 974.41 1 695.9 1C417.39 1 191.613 229.252 191.613 510.815C191.613 792.378 417.39 1020.63 695.9 1020.63Z"
-        stroke="#656c7e"
-        stroke-width="3"
-        stroke-miterlimit="10"
-      />
-      <path
-        d="M886.404 1351.77C1164.91 1351.77 1390.69 1123.52 1390.69 841.956C1390.69 560.393 1164.91 332.142 886.404 332.142C607.894 332.142 382.117 560.393 382.117 841.956C382.117 1123.52 607.894 1351.77 886.404 1351.77Z"
-        stroke="#656c7e"
-        stroke-width="3"
-        stroke-miterlimit="10"
-      />
-      <path
-        d="M505.286 1351.77C783.796 1351.77 1009.57 1123.52 1009.57 841.956C1009.57 560.393 783.796 332.142 505.286 332.142C226.777 332.142 1 560.393 1 841.956C1 1123.52 226.777 1351.77 505.286 1351.77Z"
-        stroke="#656c7e"
-        stroke-width="3"
-        stroke-miterlimit="10"
-      />
-    </g>
-  </svg>
 </section>

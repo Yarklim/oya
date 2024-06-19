@@ -15,19 +15,34 @@
   font-weight: 300;
 }
 
+// =========== Slider ===========
+.swiper__team {
+  width: 60%;
+
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 30%;
+  }
+}
+
 .team__list {
   margin-top: clamp(2.188rem, 2rem + 0.94vw, 3.125rem); // 35 - 50
   //   margin-left: clamp(1.563rem, 7.81vw, 9.375rem); // 25 - 150
+  padding-left: 10px;
 
-  display: flex;
-  justify-content: center;
-  column-gap: clamp(1.875rem, 1.5rem + 1.88vw, 3.75rem); // 30 - 60
+  display: inline-flex;
+
+  cursor: grab;
 }
 
 .team__item {
   width: clamp(15.625rem, 14.25rem + 6.88vw, 22.5rem); // 250 - 360
 
-  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team__item--title {
